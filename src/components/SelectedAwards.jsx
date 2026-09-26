@@ -4,33 +4,20 @@ import "../css/All.css"
 export default function SelectedAwards() {
     const awards = [
         {
-            text: "[2026] Outstanding Graduate Award in Tongji University ",
-            highlight: "(Top 5%)"
+            text: "[2026] Outstanding Graduate of Hunan Province ",
+            highlight: "(Top 2.5%)"
         },
         {
-            text: "[2025] Excellent Master's Scholarship in Tongji University ",
-            highlight: "(Top 2%)",
+            text: "[2025] National Scholarship ",
+            highlight: "(Top 1%)"
         },
         {
-            text: "[2024] American New Concept Design Art Award ",
-            highlight: "(Second Prize)",
+            text: "[2024] National Scholarship ",
+            highlight: "(Top 1%)",
         },
         {
-            text: "[2023] National Computer Design Competition ",
-            highlight: "(Third Prize)",
-        },
-        {
-            text: "[2022] Mathematical Contest In Modeling ",
-            highlight: "(Meritorious Winner, Top 7.5%)",
-        },
-
-        {
-            text: "[2021] Academic Excellence Scholarship in Soochow University ",
-            highlight: "(Top 4%)",
-        },
-        {
-            text: "[2020] Academic Pacesetter in Turing Class in Soochow University ",
-            highlight: "(Top 3%)",
+            text: "[2023] National Scholarship ",
+            highlight: "(Top 0.5%)",
         },
     ];
 
