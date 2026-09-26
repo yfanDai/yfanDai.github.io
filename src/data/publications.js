@@ -1,550 +1,354 @@
-
-import sketchar from "../assets/paper/sketchar.pdf";
-import sketchar_slide from "../assets/paper/sketchar_slide.pdf";
-import art from "../assets/paper/art.pdf";
-import brain from "../assets/paper/brain.pdf";
-import brain_slide from "../assets/paper/brain_slide.pdf";
-import clay from "../assets/paper/clay.pdf";
-import emo from "../assets/paper/emo.pdf";
-import flow from "../assets/paper/flow.pdf";
-import capace from "../assets/paper/capace.pdf";
-import future from "../assets/paper/future.pdf";
-import image from "../assets/paper/image.pdf";
-import lifeeling from "../assets/paper/lifeeling.pdf";
-import lifeeling_poster from "../assets/paper/lifeeling_poster.pdf";
-import tarot from "../assets/paper/tarot.pdf";
-import vistoria from "../assets/paper/vistoria.pdf";
-import chinese from "../assets/paper/chinese.pdf";
-import tuntun from "../assets/paper/tuntun.pdf";
-import tuntun_poster from "../assets/paper/tuntun_poster.pdf";
-import carbon_poster from "../assets/paper/carbon_poster.pdf";
-// import capace_slide from "../assets/paper/capace_slide.pdf";
-import cradle from "../assets/paper/cradle.pdf";
-
-import sketchar_img from "../assets/paper_image/sketchar.png";
-import future_img from "../assets/paper_image/future.png";
-import art_img from "../assets/paper_image/art.png";
-import capace_img from "../assets/paper_image/capace.png";
-import tarot_img from "../assets/paper_image/tarot.png";
-import clay_img from "../assets/paper_image/clay.png";
-import chinese_img from "../assets/paper_image/chinese.png";
-import emo_img from "../assets/paper_image/emo.png";
-import image_img from "../assets/paper_image/image.png";
-import flow_img from "../assets/paper_image/flow.png";
-import tuntun_img from "../assets/paper_image/tuntun.png";
-import brain_img from "../assets/paper_image/brain.png";
-import vistoria_img from "../assets/paper_image/vistoria1.png";
-import lifeeling_img from "../assets/paper_image/lifeeling.png";
-import carbon_img from "../assets/paper_image/carbon.png";
+// Paper metadata checked against https://scholar.google.com/citations?user=zU8iSjoAAAAJ&hl=en on 2026-09-26.
 import huabu_img from "../assets/paper_image/huabu.png";
 import cradle_img from "../assets/paper_image/cradle1.png";
-
-
-import clay_video from "../assets/video/clay.mp4";
+import clay_img from "../assets/paper_image/clay.png";
+import chinese_img from "../assets/paper_image/chinese.png";
+import capace_img from "../assets/paper_image/capace.png";
+import vistoria_img from "../assets/paper_image/vistoria1.png";
+import tuntun_img from "../assets/paper_image/tuntun.png";
+import emo_img from "../assets/paper_image/emo.png";
+import image_img from "../assets/paper_image/image.png";
+import brain_img from "../assets/paper_image/brain.png";
 
 export const MY_NAME = "Yifan Dai";
 
 export const publications = [
     {
-        id: "huabu",
-        title:
-            "Huabu: An AI-Native Canvas Workspace for Human-Agent Collaboration",
-        abstract:
-            "Huabu is an AI-native canvas workspace designed to support collaboration between humans and AI agents. Developed during my internship at Microsoft Research Asia, I contributed to building the system from 0 to 1, exploring new interaction paradigms for organizing knowledge, maintaining shared context, and enabling agents to take collaborative actions. Huabu aims to provide a shared workspace where humans and agents can collect what matters, organize it together, and act upon shared knowledge.",
+        id: "cof-t2i",
+        title: "CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation",
+        abstract: "CoF-T2I uses a video model to refine an image across successive frames, treating intermediate frames as visual reasoning steps. It trains on CoF-Evol-Instruct trajectories and encodes frames independently to reduce motion artifacts, improving text-to-image quality on GenEval and Imagine-Bench.",
         authors: [
-            {
-                name: "Long Ling",
-                link: "https://lucy-ling.com",
-            },
-            {
-                name: "Microsoft Research Asia Staffs",
-                link: "https://github.com/microsoft/Huabu",
-            },
+            { name: "Chengzhuo Tong" },
+            { name: "Mingkun Chang" },
+            { name: "Shenglong Zhang" },
+            { name: "Yuran Wang" },
+            { name: "Cheng Liang" },
+            { name: "Zhizheng Zhao" },
+            { name: "Ruichuan An" },
+            { name: "Bohan Zeng" },
+            { name: "Yang Shi" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Ziming Zhao" },
+            { name: "Guanbin Li" },
+            { name: "Pengfei Wan" },
+            { name: "Yuanxing Zhang" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {
-                name: "Open-source Project",
-                type: "project",
-            },
-        ],
+        venues: [{ name: "ICML 2026", type: "conference" }],
         links: {
-            github: "https://github.com/microsoft/Huabu",
-            page: "https://microsoft.github.io/Huabu/",
+            pdf: "https://arxiv.org/pdf/2601.10061",
+            arxiv: "https://arxiv.org/abs/2601.10061",
         },
         image: huabu_img,
-        tags: [
-            "Selected",
-            "Agent Harness",
-            "Human-AI Collaboration",
-            "Cognitive Augmentation",
-            "System",
-            "Multimodal Interaction",
-        ]
+        tags: ["Selected", "Agent Harness", "Human-AI Collaboration", "Cognitive Augmentation", "System", "Multimodal Interaction"],
     },
     {
-        id: "cradle",
-        title:
-            "Cradle of Success: Fortune-Telling Stereotypes and Wishful Futures in the Age of Generative AI",
-        abstract:
-            "Cradle of Success is an interactive artwork that examines how human tendencies toward wishful thinking and stereotyping are transformed and amplified through interactions with Generative AI. Inspired by fortune-telling practices, the work explores how AI-generated predictions can reproduce and normalize societal stereotypes while shaping people's perceptions of possible futures. Through an interactive installation combining baby photographs, career symbols, AI-generated life trajectories, and fortune-inspired artifacts, this work invites reflection on the social implications of GenAI in personal and cultural contexts.",
+        id: "world-models",
+        title: "Research on world models is not merely injecting world knowledge into specific tasks",
+        abstract: "This paper argues that adding world knowledge to separate tasks does not by itself produce a coherent world model. It proposes a unified design perspective that brings together perception, interaction, symbolic reasoning, and spatial representation.",
         authors: [
-            {
-                name: "Ray LC",
-                link: "https://raylc.org/",
-                role: "advisor",
-            },
-            {
-                name: "Bowen Liu",
-                link: "",
-            },
-            {
-                name: "Long Ling",
-                link: "https://lucy-ling.com",
-            },
-            {
-                name: "Sijia Liu",
-                link: "https://starliusijia.com/",
-            },
+            { name: "Bohan Zeng" },
+            { name: "Kaixin Zhu" },
+            { name: "Daili Hua" },
+            { name: "Bozhou Li" },
+            { name: "Chengzhuo Tong" },
+            { name: "Yuran Wang" },
+            { name: "Xinyi Huang" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Zixiang Zhang" },
+            { name: "Yifan Yang" },
+            { name: "Zhou Liu" },
+            { name: "Hao Liang" },
+            { name: "Xiaochen Ma" },
+            { name: "Ruichuan An" },
+            { name: "Tianyi Bai" },
+            { name: "Hongcheng Gao" },
+            { name: "Junbo Niu" },
+            { name: "Yang Shi" },
+            { name: "Xinlong Chen" },
+            { name: "Yue Ding" },
+            { name: "Minglei Shi" },
+            { name: "Kai Zeng" },
+            { name: "Yiwen Tang" },
+            { name: "Yuanxing Zhang" },
+            { name: "Pengfei Wan" },
+            { name: "Xintao Wang" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {
-                name: "C&C '26",
-                type: "conference",
-            },
-        ],
+        venues: [{ name: "arXiv 2026", type: "wip" }],
         links: {
-            pdf: cradle,
-            acm: "https://dl.acm.org/doi/abs/10.1145/3803784.3809265",
+            pdf: "https://arxiv.org/pdf/2602.01630",
+            arxiv: "https://arxiv.org/abs/2602.01630",
         },
-        pages: [
-            {label: "Artwork Page", url: "https://recfreq.wordpress.com/portfolio/cradle-of-success/"},
-            {label: "GenAI Fortune Telling Series", url: "https://recfro.github.io/fortune-telling/"},
-        ],
-        exhibitions: [
-            {title: "ACM Creativity & Cognition Art Gallery", place: "Central Saint Martins, London, UK", date: "13–17 Jul 2026", url: "https://cc.acm.org/2026/photos/"},
-            {title: "Dreamscapes", place: "Hong Kong Arts Centre", date: "27 Feb – 10 Mar 2026", url: "https://dreamscapeshk.wordpress.com/2026/01/30/cradle-of-success/"},
-            {title: "Singing Waves Gallery", place: "School of Creative Media, City University of Hong Kong", date: "19–26 Dec 2025"},
-        ],
-        related: ["chinese", "tarot"],
         image: cradle_img,
-        tags: [
-            "Human-AI Collaboration",
-            "Affective Computing",
-            "Cultural & Philosophical",
-            "Understanding People",
-        ],
+        tags: ["Human-AI Collaboration", "Affective Computing", "Cultural & Philosophical", "Understanding People"],
     },
     {
-        id: "clayscape",
-        title:
-            "ClayScape: A GenAI-Supported Workflow for Designing Chinese Style Ceramics with Clay 3D Printing",
-        abstract: "Chinese ceramic-making involves complex and interdependent steps, making it technically demanding and time-consuming. Digital fabrication methods attempt to make the process more efficient, but for craft-creators, technical barriers such as CAD and CAM skills remain major obstacles. To reducing technical barriers for crafts-people, two co-authors first collaboratively designed a workflow that enables craft-artists to sketch out their design, actualize the design by prompting GenAI, then convert the design into ceramic crafts by clay 3D printing and hand glazing. We evaluated the workflow with an empirical study of four ceramic creators using the tool in real-life settings. The findings show that beginner creators benefited from accessible entry points into the creative process, whereas experienced artists reflected critically on the balance between digital fabrication skills and traditional crafts. This work demonstrates how ideas can be transformed into physical forms through human-AI design and digital fabrication hybrid workflows.",
+        id: "openworldlib",
+        title: "Openworldlib: A unified codebase and definition of advanced world models",
+        abstract: "OpenWorldLib defines advanced world models around perception, interaction, and long-term memory. It provides a standardized inference framework that combines models from different tasks for reuse and collaborative reasoning.",
         authors: [
-            {name: "Sijia Liu",link: "https://starliusijia.com/"},
-            {name: "Hoi Ching Silvester Mok",link: "https://www.silvestermok.com/biography"},
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Tobias Klein", link: "https://www.tobiasklein.ws/"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
+            { name: "DataFlow Team" },
+            { name: "Bohan Zeng" },
+            { name: "Daili Hua" },
+            { name: "Kaixin Zhu" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Bozhou Li" },
+            { name: "Yuran Wang" },
+            { name: "Chengzhuo Tong" },
+            { name: "Yifan Yang" },
+            { name: "Mingkun Chang" },
+            { name: "Jianbin Zhao" },
+            { name: "Zhou Liu" },
+            { name: "Hao Liang" },
+            { name: "Xiaochen Ma" },
+            { name: "Ruichuan An" },
+            { name: "Junbo Niu" },
+            { name: "Zimo Meng" },
+            { name: "Tianyi Bai" },
+            { name: "Meiyi Qiang" },
+            { name: "Huanyao Zhang" },
+            { name: "Zhiyou Xiao" },
+            { name: "Tianyu Guo" },
+            { name: "Qinhan Yu" },
+            { name: "Runhao Zhao" },
+            { name: "Zhengpin Li" },
+            { name: "Xinyi Huang" },
+            { name: "Yisheng Pan" },
+            { name: "Yiwen Tang" },
+            { name: "Juanxi Tian" },
+            { name: "Yang Shi" },
+            { name: "Yue Ding" },
+            { name: "Xinlong Chen" },
+            { name: "Hongcheng Gao" },
+            { name: "Minglei Shi" },
+            { name: "Jialong Wu" },
+            { name: "Zekun Wang" },
+            { name: "Yuanxing Zhang" },
+            { name: "Xintao Wang" },
+            { name: "Pengfei Wan" },
+            { name: "Yiren Song" },
+            { name: "Mike Zheng Shou" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {name: "DIS '26", type: "conference"},
-        ],
+        venues: [{ name: "Technical Report 2026", type: "wip" }],
         links: {
-            acm: "https://doi.org/10.1145/3800645.3812941",
-            pdf: clay,
-            arxiv: "https://arxiv.org/abs/2604.25657",
-            video: clay_video,
+            pdf: "https://arxiv.org/pdf/2604.04707",
+            arxiv: "https://arxiv.org/abs/2604.04707",
+            github: "https://github.com/OpenDCAI/OpenWorldLib",
         },
-        pages: [
-            {label: "Project Page", url: "https://recfro.github.io/clayscape/"},
-        ],
         image: clay_img,
-        tags: ["Selected","Human-AI Collaboration", "Creativity Support", "Cultural & Philosophical","Digital Fabrication"]
-    },
-
-        {
-        id: "chinese",
-        title:
-            "\"Re-Tell the Fortune so I Can Believe It\": How Chinese User Communities Engage with and Interpret GenAI-based Fortune Telling",
-        abstract: "People traditionally divine the future by interpreting natural phenomena as oracular signals, especially in societies adhering to traditional beliefs like China. With the advent of Generative AI (GenAI), people gain access to new ways of probing digital oracles for predicting the future. To understand how people use and interpret GenAI for divination in China, we interviewed 22 participants who habitually use GenAI platforms for fortune-telling, complemented by a three-week digital ethnography with 1,842 community posts. Qualitative analysis showed that people who seek psychological comfort are particularly receptive to GenAI-based decision-making. Users valued GenAI's accessibility, convenience, and efficiency while perceiving its lack of spiritual mystique. We observed community dynamics forming around GenAI tools, where users reinforce interpretations by sharing and discussing with each other, repeating queries until responses align with expectations. Our work uncovers how AI technologies change the way people and communities engage in traditional cultural practices while yearning for the same goals.",
-        authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Xiyu Zheng"},
-            {name: "Gengchen Cao"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "CSCW '26", type: "conference"},
-        ],
-        links: {
-            acm: "https://doi.org/10.1145/3816988",
-            pdf: chinese,
-            arxiv: "https://arxiv.org/abs/2603.27784",
-        },
-        pages: [
-            {label: "Project Page", url: "https://recfro.github.io/fortune-telling/"},
-        ],
-        award: "Honorable Mention Award at CSCW 2026 (top 3% of submissions)",
-        related: ["cradle", "tarot"],
-        image: chinese_img,
-        tags: ["Selected", "Honorable Mention", "Human-AI Collaboration", "Cultural & Philosophical","Understanding People"]
+        tags: ["Selected", "Human-AI Collaboration", "Creativity Support", "Cultural & Philosophical", "Digital Fabrication"],
     },
     {
-        id: "capace",
-        title:
-            "Capace: A Head-Mounted Haptic System for Attention Regulation in Adults with Deficit/Hyperactivity Disorder (ADHD)",
-        abstract: "Regulating attention is a primary challenge for adults with Attention-Deficit/Hyperactivity Disorder (ADHD). Current technological aids, such as smartphone apps or wrist-worn wearables, often introduce visual distractions that undermine their intended purpose. Thus, we conducted formative studies involving 124 survey participants, 12 adults with ADHD, and 4 clinicians, which confirmed the need for non-visual, embodied, and in-situ interventions. Building on these insights, we present CaPace, a novel head-mounted wearable system that provides real-time, context-aware vibrotactile biofeedback cues to support focus. We evaluated CaPace in 2 within-group experiments with 10 adults with ADHD, assessing the comprehensibility of its haptic cues and the user experience. Our work contributes to an understanding of the design space and feasibility of using on-head haptics for attention, inspiring future explorations of embodied interfaces for cognitive support.",
+        id: "artifact-bench",
+        title: "Artifact-Bench: Evaluating MLLMs on Detecting and Assessing the Artifacts of AI-Generated Videos",
+        abstract: "Artifact-Bench tests whether multimodal language models can detect and explain flaws in AI-generated videos, including photorealistic, animated, and CG content. Its three tasks cover authenticity classification, realism comparison, and artifact identification; results across 19 models reveal substantial gaps from human judgments.",
         authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com",role: "first"},
-            // {name: "Yike Wang", link: "https://yikewanguk.github.io/",role: "first"},
-            // {name: "Jiaying Lei"},
-            {name: "Nan Cao", link: "https://www.nancao.org/", role: "advisor"},
+            { name: "Yuqi Tang" },
+            { name: "Yang Shi" },
+            { name: "Zhuoran Zhang" },
+            { name: "Qixun Wang" },
+            { name: "Xuehai Bai" },
+            { name: "Yue Ding" },
+            { name: "Ruizhe Chen" },
+            { name: "Bohan Zeng" },
+            { name: "Xinlong Chen" },
+            { name: "Xuanyu Zhu" },
+            { name: "Bozhou Li" },
+            { name: "Yuran Wang" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Chengzhuo Tong" },
+            { name: "Xinyu Liu" },
+            { name: "Yiyan Ji" },
+            { name: "Yujie Wei" },
+            { name: "Yuhao Dong" },
+            { name: "Shilin Yan" },
+            { name: "Fengxiang Wang" },
+            { name: "Yi-Fan Zhang" },
+            { name: "Haotian Wang" },
+            { name: "Yuanxing Zhang" },
+            { name: "Pengfei Wan" },
         ],
-        venues: [
-            {name: "Master Thesis", type: "project"},
-        ],
+        venues: [{ name: "arXiv 2026", type: "wip" }],
         links: {
-            // acm: "https://dl.acm.org/doi/abs/10.1145/3677102",
-            // pdf: capace,
-            thesis: capace,
-            // slide:capace_slide,
-            // arxiv: "https://arxiv.org/abs/2508.12333",
-            // video: "https://dl.acm.org/doi/suppl/10.1145/3677102/suppl_file/v8chip337.mp4",
-            // msg: "🚧 Video coming soon...",
+            pdf: "https://arxiv.org/pdf/2605.18984",
+            arxiv: "https://arxiv.org/abs/2605.18984",
+        },
+        image: chinese_img,
+        tags: ["Selected", "Honorable Mention", "Human-AI Collaboration", "Cultural & Philosophical", "Understanding People"],
+    },
+    {
+        id: "adaptmol",
+        title: "AdaptMol: Adaptive Fusion from Sequence String to Topological Structure for Few-shot Drug Discovery",
+        abstract: "AdaptMol combines SMILES sequences and molecular graphs through adaptive attention for few-shot molecular property prediction. It uses global sequence and local structural features in a prototypical network and evaluates the approach on three benchmarks under 5-shot and 10-shot settings.",
+        authors: [
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Xuanbai Ren" },
+            { name: "Tengfei Ma" },
+            { name: "Qipeng Yan" },
+            { name: "Yiping Liu" },
+            { name: "Yuansheng Liu" },
+            { name: "Xiangxiang Zeng" },
+        ],
+        venues: [{ name: "arXiv 2025", type: "wip" }],
+        links: {
+            pdf: "https://arxiv.org/pdf/2505.11878",
+            arxiv: "https://arxiv.org/abs/2505.11878",
         },
         image: capace_img,
-        tags: ["Cognitive Augmentation","Machine Learning", "Embodied Interaction","System"]
+        tags: ["Cognitive Augmentation", "Machine Learning", "Embodied Interaction", "System"],
     },
     {
-        id: "vistoria",
-        title:
-            "Vistoria: A Multimodal System to Support Fictional Story Writing through Instrumental Image-Text Co-Editing",
-        abstract: "Humans think visually—we remember in images, dream in pictures, and use visual metaphors to communicate. Yet, most creative writing tools remain text-centric, limiting how authors develop ideas. We present Vistoria, a system for synchronized text-image co-editing in fictional story writing that treats visuals and text as co-equal narrative materials. A formative Wizard-of-Oz co-design study with 10 story writers revealed how sketches, images, and annotations serve as essential instruments for ideation and organization. Drawing on theories of Instrumental Interaction and Structural Mapping, Vistoria introduces multimodal operations-lasso, collage, filters, and perspective shifts that enable seamless narrative exploration across modalities. A controlled study with 12 participants shows co-editing enhances expressiveness, immersion, and collaboration, enabling writers to explore divergent directions, embrace serendipitous randomness, and trace evolving storylines. While multimodality increased cognitive demand, participants reported stronger authorship and agency. These findings demonstrate multimodal co-editing expands creative potential by balancing abstraction and concreteness in narrative development.",
+        id: "flux-opd",
+        title: "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+        abstract: "Flux-OPD studies how changing task contexts can supervise on-policy distillation when explicit rewards are unavailable. It anchors a context-free teacher with weighted contextual corrections, using a conflict measure to stabilize learning on open-ended tasks.",
         authors: [
-            {name: "Kexue Fu",link:"https://fukexuexue.github.io/", role: "first"},
-            {name: "Jingfei Huang",link:"https://www.jingfeihuang.com/", role: "first"},
-            {name: "Long Ling", link: "https://lucy-ling.com",role: "first"},
-            {name: "Sumin Hong",link: "https://suminhong.me/"},
-            {name: "Yihang Zuo",link: "https://zyh0911.github.io/"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-            {name: "Toby Jia-Jun Li", link: "https://toby.li/", role: "advisor"},
+            { name: "Yuran Wang" },
+            { name: "Zekun Wang" },
+            { name: "Bohan Zeng" },
+            { name: "Ruixu Zhang" },
+            { name: "Wenxuan Liu" },
+            { name: "Liu Yang" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Yang Shi" },
+            { name: "Bozhou Li" },
+            { name: "Chengzhuo Tong" },
+            { name: "Daili Hua" },
+            { name: "Yuanxing Zhang" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {name: "CHI '26", type: "conference"},
-        ],
+        venues: [{ name: "arXiv 2026", type: "wip" }],
         links: {
-            acm: "https://doi.org/10.1145/3772318.3790400",
-            pdf: vistoria,
-            github:"https://github.com/zyh0911/CHI26-Visual_Instruments",
-            arxiv: "https://arxiv.org/abs/2509.13646",
-            short: "https://www.youtube.com/watch?v=FppAZnPdIFU",
-            video:"https://www.youtube.com/watch?v=iAYFP2z5GLI",
-            demo:"https://www.youtube.com/watch?v=JWaj2VJG5lU"
+            pdf: "https://arxiv.org/pdf/2607.28022",
+            arxiv: "https://arxiv.org/abs/2607.28022",
         },
-        pages: [
-            {label: "Project Page", url: "https://fukexuexue.github.io/Vistoria-CHI2026/"},
-            {label: "Studio Page", url: "https://recfro.github.io/vistoria/"},
-        ],
-        youtube: "eRxAIY3IMwM",
         image: vistoria_img,
-        tags: ["Selected","Human-AI Collaboration","Creativity Support", "Multimodal Interaction","System"]
+        tags: ["Selected", "Human-AI Collaboration", "Creativity Support", "Multimodal Interaction", "System"],
     },
-
     {
-        id: "tuntun",
-        title:
-            "TunTun Diary: Exploring AI-Generated Storytelling and Virtual Companionship for Nightmare Relief",
-        abstract: "Nightmares disrupt sleep and heighten daytime anxiety, yet therapeutic support is often hard to access due to limited clinician availability, cost, and clinical framing. We propose TunTun Diary, a mobile game in which an alien puppy named TunTun “eats” players’ nightmares and returns gentle, comic-style retellings. The system uses generative AI to reinterpret users' nightmare descriptions into positive narratives. Through simple text-based dream input and playful pet interactions, players form an emotional bond with TunTun as a safe and supportive companion for coping with negative dreams. In a preliminary deployment with 20 young adults, participants reported emotional relief and increased comfort after engaging with TunTun’s transformed dream comics, often describing the experience as both soothing and playful. These findings highlight how integrating therapy-inspired reframing with interactive storytelling and virtual companionship can lower barriers to everyday emotional support. By illustrating a novel application of AI-based visual storytelling in game contexts, TunTun Diary opens opportunities for future research at the intersection of visual computing, affective interaction, and game design.",
+        id: "latentomni",
+        title: "LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning",
+        abstract: "LatentOmni interleaves text reasoning with audio-visual latent states so multimodal reasoning can retain fine-grained sensory evidence. It combines feature-level supervision, temporal alignment through Omni-Sync Position Embedding, and a 35K-trajectory instruction dataset, outperforming text-only reasoning baselines on audio-visual tasks.",
         authors: [
-            {name:"Zixin Wang",link: "https://zixin-wang.netlify.app/"},
-            {name:"Shan Luo",link: "https://luoshan-home.vercel.app/index.html"},
-            {name:"Siyu Tian"},
-            {name: "Yunxi Cai"},
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Muhan Xu"},
-            {name: "Jiaxing Yu"},
-            {name: "Guanting Lu"},
-            {name:"Jiajing Zhu"},
-            {name: "Liping Luo"}
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Zhenhua Wu" },
+            { name: "Bohan Zeng" },
+            { name: "Daili Hua" },
+            { name: "Jialing Liu" },
+            { name: "Bozhou Li" },
+            { name: "Yuran Wang" },
+            { name: "Chengzhuo Tong" },
+            { name: "Hao Liang" },
+            { name: "Xiaochen Ma" },
+            { name: "Junbo Niu" },
+            { name: "Tianyu Guo" },
+            { name: "Yang Shi" },
+            { name: "Yue Ding" },
+            { name: "Yiyan Ji" },
+            { name: "Bingyin Mei" },
+            { name: "Yushuo Guan" },
+            { name: "Yuanxing Zhang" },
+            { name: "Pengfei Wan" },
+            { name: "Fangcheng Fu" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {name: "Siggraph Asia '25 Poster", type: "conference"}
-        ],
+        venues: [{ name: "NeurIPS 2026", type: "conference" }],
         links: {
-            acm: "https://dl.acm.org/doi/abs/10.1145/3757374.3771484",
-            pdf: tuntun,
-            poster:tuntun_poster
+            pdf: "https://arxiv.org/pdf/2605.22012",
+            arxiv: "https://arxiv.org/abs/2605.22012",
         },
-        image:tuntun_img,
-        tags: ["Human-AI Collaboration","Affective Computing","System"]
+        image: tuntun_img,
+        tags: ["Human-AI Collaboration", "Affective Computing", "System"],
     },
-
     {
-        id: "emo",
-        title:
-            "Emoticrafter: Text-to-emotional-image generation based on valence-arousal model",
-        abstract: "Recent research shows that emotions can enhance users' cognition and influence information communication. While research on visual emotion analysis is extensive, limited work has been done on helping users generate emotionally rich image content. Existing work on emotional image generation relies on discrete emotion categories, making it challenging to capture complex and subtle emotional nuances accurately. Additionally, these methods struggle to control the specific content of generated images based on text prompts. In this work, we introduce the new task of continuous emotional image content generation (C-EICG) and present EmotiCrafter, an emotional image generation model that generates images based on text prompts and Valence-Arousal values. Specifically, we propose a novel emotion-embedding mapping network that embeds Valence-Arousal values into textual features, enabling the capture of specific emotions in alignment with intended input prompts. Additionally, we introduce a loss function to enhance emotion expression. The experimental results show that our method effectively generates images representing specific emotions with the desired content and outperforms existing techniques.",
+        id: "human-centric-captioning",
+        title: "Human-Centric Image Captioning with Subject-Centered Spatial Understanding",
+        abstract: "This work identifies subject-centered spatial errors in human-focused image captions and introduces the SPACE benchmark to measure them. It builds spatially faithful training captions from body-part hints and uses a rubric-based alignment reward to improve anatomical and left-right grounding.",
         authors: [
-            {name: "Shengqi Dang",link: "https://dangsq.github.io/#/",role: "first" },
-            {name: "Yi He",link: "https://scholar.google.com/citations?user=NC_b_pUAAAAJ&hl=zh-CN",role: "first" },
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Ziqing Qian"},
-            {name: "Nanxuan Zhao",link: "https://www.nxzhao.com/"},
-            {name: "Nan Cao", link: "https://www.nancao.org/", role: "advisor"},
+            { name: "Bozhou Li" },
+            { name: "Jiahang Zhang" },
+            { name: "Yue Ding" },
+            { name: "Yushuo Guan" },
+            { name: "Bohan Zeng" },
+            { name: "Yiyan Ji" },
+            { name: "Xinlong Chen" },
+            { name: "Yang Shi" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Yuran Wang" },
+            { name: "Chengzhuo Tong" },
+            { name: "Pengfei Wan" },
+            { name: "Yuanxing Zhang" },
+            { name: "Wentao Zhang" },
         ],
-        venues: [
-            {name: "ICCV '25", type: "conference"},
-        ],
+        venues: [{ name: "ACM MM 2026", type: "conference" }],
         links: {
-            // acm: "https://dl.acm.org/doi/abs/10.1145/3678884.3681846",
-            pdf: emo,
-            demo: "https://huggingface.co/spaces/idvxlab/EmotiCrafter-Demo",
-            arxiv: "https://arxiv.org/pdf/2501.05710?",
-            code: "https://github.com/idvxlab/EmotiCrafter?tab=readme-ov-file"
+            pdf: "https://arxiv.org/pdf/2609.08300",
+            arxiv: "https://arxiv.org/abs/2609.08300",
         },
         image: emo_img,
-        tags: ["Selected","Computer Vision","Affective Computing","Machine Learning"]
+        tags: ["Selected", "Computer Vision", "Affective Computing", "Machine Learning"],
     },
-
     {
-        id: "image",
-        title:
-            "\"An Image of Ourselves in Our Minds\": How College-educated Online Dating Users Construct Profiles for Effective Self Presentation",
-        abstract: "Online dating is frequently used by individuals looking for potential relationships and intimate connections. Central to dating apps is the creation and refinement of a dating profile, which represents the way individuals desire to present themselves to potential mates, while hiding information they do not care to share. To investigate the way frequent users of dating apps construct their online profiles and perceive the effectiveness of strategies taken in making profiles, we conducted semi-structured interviews with 20 experienced users who are Chinese college-educated young adults and uncovered the processes and rationales by which they make profiles for online dating, particularly in selecting images for inclusion. We found that participants used idealized photos that exaggerated their positive personality traits, sometimes traits that they do not possess but perceive others to desire, and sometimes even traits they wish they had possessed. Users also strategically used photos that show personality and habits without showing themselves, and often hid certain identifying information to reduce privacy risks. This analysis signals potential factors that are key in building online dating profiles, providing design implications for systems that limit the use of inaccurate information while still promoting self-expression in relationship platforms.",
+        id: "keyframe-compass",
+        title: "KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation",
+        abstract: "KeyFrame-Compass evaluates video generation guided by multiple keyframes using 386 curated cases. It measures six aspects of keyframe execution alongside video quality and finds trade-offs between faithful constraints and natural synthesis across nine systems.",
         authors: [
-            {name: "Fan Zhang",link:"https://gracezhangfan.com/"},
-            {name: "Yun Chen"},
-            {name: "XiaoKe Zeng", link: "https://zx-ke.com/"},
-            {name: "Tianqi Wang"},
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
+            { name: "Yuqi Tang" },
+            { name: "Tengfei Liu" },
+            { name: "Yizheng Lai" },
+            { name: "Yuran Wang" },
+            { name: "Yang Shi" },
+            { name: "Wanshun Su" },
+            { name: "Zhuoran Zhang" },
+            { name: "Qixun Wang" },
+            { name: "Xiaohan Zhang" },
+            { name: "Xinlei Yu" },
+            { name: "Xuehai Bai" },
+            { name: "Xuanyu Zhu" },
+            { name: "Bohan Zeng" },
+            { name: "Bozhou Li" },
+            { name: "Shujie Li" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Yujie Wei" },
+            { name: "Shixuan Liu" },
+            { name: "Haotian Wang" },
+            { name: "Jialu Chen" },
+            { name: "Yuanxing Zhang" },
         ],
-        venues: [
-            {name: "CSCW '25", type: "conference"},
-            {name: "PACM HCI", type: "journal"},
-        ],
+        venues: [{ name: "arXiv 2026", type: "wip" }],
         links: {
-            acm: "https://dl.acm.org/doi/abs/10.1145/3710929",
-            pdf: image,
-            arxiv: "https://arxiv.org/pdf/2502.11430",
+            pdf: "https://arxiv.org/pdf/2607.14202",
+            arxiv: "https://arxiv.org/abs/2607.14202",
         },
-        related: ["carbon"],
         image: image_img,
-        tags: ["Cultural & Philosophical","Understanding People"]
+        tags: ["Cultural & Philosophical", "Understanding People"],
     },
     {
-        id: "brain",
-        title:
-            "Brain Cache: Generative AI as a Cognitive Exoskeleton for Externalizing, Structuring, and Activating Knowledge",
-        abstract: "The cognitive entropy of the information age manifests as memory overload, fragmented thinking, and inaccessible knowledge when needed. This paper proposes Brain Cache, a Generative AI-powered cognitive exoskeleton acting as a second brain for humans. It achieves cognitive augmentation through three mechanisms: externalizing biological memory via personal knowledge repositories, structuring fragmented insights into semantic networks, and activating knowledge through contextual interaction and recommendation. The study establishes a theoretical framework for human-AI cognitive symbiosis while examining technical implementation challenges and risks of algorithmic dependency in long-term usage.",
+        id: "edit-compass",
+        title: "Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling",
+        abstract: "Edit-Compass and EditReward-Compass jointly evaluate image editing systems and their reward models. The suite includes 2,388 annotated editing cases and 2,251 preference pairs, with fine-grained rubrics designed to reflect difficult real-world edits and reward-model use during optimization.",
         authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com"},
+            { name: "Xuehai Bai" },
+            { name: "Yang Shi" },
+            { name: "Yi-Fan Zhang" },
+            { name: "Xuanyu Zhu" },
+            { name: "Yuran Wang" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Xinyu Liu" },
+            { name: "Yiyan Ji" },
+            { name: "Xiaoling Gu" },
+            { name: "Yuanxing Zhang" },
         ],
-        venues: [
-            {name: "CHI Workshop '25", type: "workshop"}
-        ],
+        venues: [{ name: "arXiv 2026", type: "wip" }],
         links: {
-            slide:brain_slide,
-            pdf: brain,
-            github:"https://generativeaiandhci.github.io/papers/2025/genaichi2025_51.pdf",
+            pdf: "https://arxiv.org/pdf/2605.13062",
+            arxiv: "https://arxiv.org/abs/2605.13062",
         },
         image: brain_img,
-        tags: ["Human-AI Collaboration","Creativity Support","Cognitive Augmentation"]
+        tags: ["Human-AI Collaboration", "Creativity Support", "Cognitive Augmentation"],
     },
-    {
-        id: "sketchar",
-        title:
-            "Sketchar: Supporting Character Design and Illustration Prototyping using Generative AI",
-        abstract: "Character design in games involves interdisciplinary collaborations, typically between designers who create the narrative content, and illustrators who realize the design vision. However, traditional workflows face challenges in communication due to the differing backgrounds of illustrators and designers, the latter with limited artistic abilities. To overcome these challenges, we created Sketchar, a Generative AI (GenAI) tool that allows designers to prototype game characters and generate images based on conceptual input, providing visual outcomes that can give immediate feedback and enhance communication with illustrators’ next step in the design cycle. We conducted a mixed-method study to evaluate the interaction between game designers and Sketchar. We showed that the reference images generated in co-creating with Sketchar fostered refinement of design details and can be incorporated into real-world workflows. Moreover, designers without artistic backgrounds found the Sketchar workflow to be more expressive and worthwhile. This research demonstrates the potential of GenAI in enhancing interdisciplinary collaboration in the game industry, enabling designers to interact beyond their own limited expertise.",
-        authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com", role: "first"},
-            {name: "Xinyi Chen", link: "https://scholar.google.ch/citations?user=OP8pYSEAAAAJ&hl=en", role: "first"},
-            {name: "Ruoyu Wen", link: "https://playerinmetaverse.tech/", role: "first"},
-            {name: "Toby Jia-Jun Li", link: "https://toby.li/"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "CHI Play '24", type: "conference"},
-            {name: "PACM HCI", type: "journal"},
-        ],
-        links: {
-            acm: "https://dl.acm.org/doi/abs/10.1145/3677102",
-            pdf: sketchar,
-            slide: sketchar_slide,
-            web:"https://lucyling24.github.io/sketchar/",
-            arxiv: "https://arxiv.org/abs/2508.12333",
-            video: "https://dl.acm.org/doi/suppl/10.1145/3677102/suppl_file/v8chip337.mp4",
-            code:"https://github.com/LucyLing24/sketchar-code"
-        },
-        pages: [
-            {label: "Studio Page", url: "https://recfro.github.io/sketchar/"},
-        ],
-        image: sketchar_img,
-        tags: ["Selected","Human-AI Collaboration", "Creativity Support", "Multimodal Interaction","System"]
-    },
-    {
-        id: "lifeeling",
-        title:
-            "LIFEELING: A \"Detox\" Metaphor-Based Fitness Tracking and Reminder Device Designed for the Elderly",
-        abstract: "With society aging, electronic wearable devices (EWDs) can be a viable option to promote healthy living among the elderly. However, these devices often present complex graphics, difficult interfaces, and inappropriate assistance features, which hinder their use by older individuals. To address this, we conducted a formative interview and found that the elderly need simple and positive signals, psychological support through objects, and guidance for preventing over-exercise in EWDs. Thus, we propose LIFEELING, a fitness tracking and reminder system that combines the traditional bracelet form factor with the prevalent concept of \"detoxification\" among the Chinese elderly. Additionally, LIFEELING can provide positive psychological sustenance using the metaphor of \"detoxification\" and mimic design. Meanwhile, it can monitor the user's heart rate and assist with breathing adjustments. A preliminary study helps us understand how the elderly perceive it and better position our contributions.",
-        authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name:"Xiyu Zheng"},
-            {name:"Jiayu Pan"},
-            {name:"Hao Chen"},
-            {name: "Yuting Diao",link: "https://scholar.google.com/citations?user=hjUxk0oAAAAJ&hl=en"},
-            {name: "Guanhong Liu", link: "https://www.liuguanhong.net/", role: "advisor"},
-        ],
-        venues: [
-            {name: "CSCW Companion '24", type: "conference"},
-        ],
-        links: {
-            acm: "https://dl.acm.org/doi/abs/10.1145/3678884.3681846",
-            pdf: lifeeling,
-            // arxiv: "https://arxiv.org/abs/2508.12333",
-            poster:lifeeling_poster
-        },
-        image: lifeeling_img,
-        tags: ["Affective Computing", "Cognitive Augmentation","Embodied Interaction"]
-    },
-    {
-        id: "carbon",
-        title:
-            "CARBON COPY",
-        abstract: "In our rapidly advancing technological landscape, generative artificial intelligence (GenAI) is transforming human-AI interactions across various domains. The viral sensation of ChatGPT and GenAI's role in content creation has captured widespread attention. However, AI's ability to generate convincing yet fictitious images, videos, texts, and voices presents a significant challenge. This deception complicates distinguishing authentic human content from AI-generated forgeries and highlights the increasing importance of verifying online identities, particularly in mobile dating, for safety and trust as AI technology advances and detecting false content becomes more difficult. Consumers often fail to recognize fake AI-generated information, such as fake news or social media profiles, leading to misinformation and security risks. The proliferation of fake accounts with AI-synthesized faces on platforms like Facebook and LinkedIn exemplifies these challenges.\n" +
-            "\n" +
-            "Thus, we delve into the fusion of human creativity and AI’s generative power, using the fake dating website\"Carbon Copy Dating\" to critically assess the influence of GenAI in shaping social interactions within human communities. Drawing on insights from seasoned dating app users, we crafted a model for a fake dating platform, powered by GenAI-generated profiles. Our methodology commenced with an analysis of existing user profile texts, leveraging AI to emulate these narratives’ style and substance. This process involved generating textual content throughChatGPT and creating visual profiles using advanced generative models like Stable Diffusion (SD) and Midjourney (MJ). This AI-driven approach ensures that the generated profiles maintain authenticity and relevance to potential users’ expectations. ",
-        authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "XiaoKe Zeng", link: "https://zx-ke.com/"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "20th Athens Digital Arts Festival", type: "exhibition"},
-        ],
-        links: {
-            demo: "https://carboncopydating.github.io/carboncopydating/",
-            poster: carbon_poster,
-        },
-        pages: [
-            {label: "Studio Page", url: "https://recfro.github.io/carbon-copy/"},
-            {label: "Instagram Profiles", url: "https://www.instagram.com/carbon_copy_date/"},
-        ],
-        exhibitions: [
-            {title: "20th Athens Digital Arts Festival", place: "Athens, Greece", date: "2024", url: "https://2024.adaf.gr/artworks/carbon-copy/"},
-            {title: "Beyond Human Spaces", place: "PMQ, Hong Kong", url: "https://sites.google.com/view/beyondhumanspaces/"},
-        ],
-        related: ["image"],
-        image: carbon_img,
-        tags: ["Human-AI Collaboration", "Affective Computing","Cultural & Philosophical","System"]
-    },
-    {
-        id: "flow",
-        title:
-            "FLOW: Filtering and LSTM-based Optimization for Web Browser Interactions",
-        abstract: "Web browsers have become an indispensable tool for human-computer interactions across various platforms. However, interactive performance (e.g the immediacy of interaction, the accuracy of interaction data) in browser-based apps can be hindered by hardware limitations and network delays, resulting in unwanted jitter and input signal delays that negatively impact the user experience. To tackle these challenges, we propose a novel approach that leverages effective filtering algorithms and lightweight machine learning models. By integrating the 1 euro filter and Long Short-Term Memory (LSTM) algorithm, we successfully optimize the accuracy of Mediapipe-based gesture interactions and TUIO-based tangible interactions within web browsers. Our findings demonstrate that this combined approach not only enhances input signal accuracy but also ensures seamless and highly responsive web browser interactions.",
-        authors: [
-            {name:"Dongyijie Pan",link: "https://primopan.github.io/about/"},
-            {name:"Zhengnan Li"},
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name:"Guangzheng Fei"},
-        ],
-        venues: [
-            {name: "Chinese CHI '23", type: "conference"}
-        ],
-        links: {
-            acm: "https://dl.acm.org/doi/abs/10.1145/3629606.3629611",
-            pdf: flow,
-        },
-        image:flow_img,
-        tags: ["Multimodal Interaction"]
-    },
-
-    {
-        id: "tarot",
-        title:
-            "\"The answer is already in my mind\": How People Tell Their Own Fortunes Using GenAI for Personal Confirmation and Expression",
-        abstract: "People want to predict their futures with divination, which frequently guides their actions with a spiritual rationale, providing comfort for certain outcomes, or amusement for unexpected predictions. Seers often use technologies like tarot cards and Ouija boards to engage people during the fortune-telling process, but recent advances in natural-language-based systems have provided alternative means to interact with data-sources for spiritual prediction-making. To understand the ways people read and express their own futures with GenAI tools, we conducted a workshop (N=44) where participants probed GenAI tools for tarot-based divination, then expressed that future textually and visually using GenAI. We found that participants co-constructed spiritual belief with GenAI for self-reflection, paying selective attention to self-confirming predictions. They then co-created future-self narratives by strategically prompting for visual representations based on desired outcomes. This work shows how people actively negotiate meaning with technology rather than passively accept predictions in applications related to spiritual aims.",
-        authors: [
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "Qi Gong", link: "https://scholar.google.ch/citations?hl=en&user=UmuqMoMAAAAJ"},
-            {name: "Xiyu Zheng"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "Work In Progress", type: "wip"},
-        ],
-        links: {
-            // acm: "https://dl.acm.org/doi/abs/10.1145/3677102",
-            pdf: tarot,
-            // arxiv: "https://arxiv.org/abs/2508.12333",
-            // video: "https://dl.acm.org/doi/suppl/10.1145/3677102/suppl_file/v8chip337.mp4",
-            // msg: "🚧 Video coming soon...",
-        },
-        related: ["chinese", "cradle"],
-        image: tarot_img,
-        tags: ["Selected","In Submission","Human-AI Collaboration", "Cultural & Philosophical","Understanding People"]
-    },
-    {
-        id: "art",
-        title:
-            "Somewhere in between the Latent Space: Theoretical and Technological Perspectives on the Status of AI Art",
-        abstract: "Situated at the convergence of computational creativity, machine learning, and art, AI Art has experienced significant growth in popularity and is now widely regarded as a leading medium among artists. Despite growing attention to its potentialities, it has also raised philosophical, ethical, and legal issues. However, a systematic review of how and to what extent AI shapes artistic creation is lacking, as is an in-depth analysis of the technologies being used. To address these gaps, we surveyed 143 papers and artworks, presenting a multi-perspective survey considering both theoretical and technological issues. On the theoretical side, we identified 5 research threads frequently debated in the literature. On the technological side, we constructed a design taxonomy to explore how AI techniques are used in current practices. We correlate theoretical and technological analyses, providing a comprehensive understanding of how AI contributes to art making and suggesting new research opportunities.",
-        authors: [
-            {name: "Yi He",link: "https://scholar.google.com/citations?user=NC_b_pUAAAAJ&hl=zh-CN" },
-            {name: "Filippo Fabrocini", link: "https://tjsic.tongji.edu.cn/tjsicen/info/1057/1253.htm"},
-            {name: "Long Ling", link: "https://lucy-ling.com"},
-            {name: "De'en Chen"},
-            {name: "Kostas Terzidis",link: "https://scholar.google.com/citations?user=xmltKRwAAAAJ&hl=en"},
-            {name: "Nan Cao", link: "https://www.nancao.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "Work In Progress", type: "wip"},
-        ],
-        links: {
-            // acm: "https://dl.acm.org/doi/abs/10.1145/3677102",
-            pdf: art,
-            // arxiv: "https://arxiv.org/abs/2508.12333",
-            // video: "https://dl.acm.org/doi/suppl/10.1145/3677102/suppl_file/v8chip337.mp4",
-            // msg: "🚧 Public demo coming soon...",
-        },
-        image: art_img,
-        tags: ["Human-AI Collaboration","Creativity Support", "Survey"]
-    },
-
-    {
-        id: "future",
-        title:
-            "Future Calling: Exploring and Prototyping Career Choices Through Generative AI-supported Evaluation and Visualization",
-        abstract: "Choosing future career paths involves an exhaustive search over complex variables like motivation, financial considerations, and the possibility of failure. Current career planning tools are not adaptable to individual priorities and fail to provide users with concrete visualization of a long-term future career. We created Future Calling, a GenAI(Generative AI)-based application which provides a customized chatbot on career choice issues, and applies individual data to envision different potential future careers. We compared the use of Future Calling against text-to-image GenAI tool alone for career choice exploration in a between-group study. We found that Future Calling allowed participants to gain greater confidence and reflection than control. Participants used the application by repeatedly iterating, questioning, and conversing to compare their career futures, exploring detailed aspects and preferences of different career paths. This work highlights the way GenAI can support human decision-making by fostering imagination and reflection about potential futures.",
-        authors: [
-            {name: "XiaoKe Zeng", link: "https://zx-ke.com/",role: "first"},
-            {name: "Xinyi Chen", link: "https://scholar.google.ch/citations?user=OP8pYSEAAAAJ&hl=en", role: "first"},
-            {name: "Ruoyu Wen", link: "https://playerinmetaverse.tech/", role: "second"},
-            {name: "Long Ling", link: "https://lucy-ling.com", role: "second"},
-            {name: "Xiaoyu Chang"},
-            {name: "Sijia Liu",link: "https://starliusijia.com/"},
-            {name: "Kexue Fu",link:"https://fukexuexue.github.io/"},
-            {name: "Richard William Allen"},
-            {name: "Ray LC", link: "https://raylc.org/", role: "advisor"},
-        ],
-        venues: [
-            {name: "Work In Progress", type: "wip"},
-        ],
-        links: {
-            // acm: "https://dl.acm.org/doi/abs/10.1145/3677102",
-            pdf: future,
-            // arxiv: "https://arxiv.org/abs/2508.12333",
-            // video: "https://dl.acm.org/doi/suppl/10.1145/3677102/suppl_file/v8chip337.mp4",
-            msg: "🚧 Public demo coming soon...",
-        },
-        image: future_img,
-        tags: ["Human-AI Collaboration", "Creativity Support", "System"]
-    },
-
-
 ];
-
 
 export const tagColors = {
     conference: "conference",
@@ -607,4 +411,3 @@ export function projectPath(id) {
 export function getPublication(id) {
     return publications.find((p) => p.id === id);
 }
-
