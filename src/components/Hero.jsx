@@ -1,5 +1,5 @@
 import React from 'react';
-import face from '../assets/face.png';
+import face from '../assets/face.jpg';
 import "../css/Hero.css"
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

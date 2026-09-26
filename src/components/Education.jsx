@@ -4,41 +4,16 @@ import "../css/All.css"; // 确保你的 CSS 路径正确
 export default function Education() {
     const education = [
         {
-            university: "Tongji University & Shanghai Innovation Institute",
-            degree: "Ph.D. (Joint Program)",
+            university: "Shanghai Jiao Tong University",
+            degree: "Ph.D. in Computer Science and Technology",
             period: "2026.09 - present",
-            location: "Shanghai, China",
-            advisor: { name: "Prof. Tao Gui", link: "https://guitaowufeng.github.io/" }
+            location: "Shanghai, China"
         },
         {
-            university: "Tongji University",
-            degree: "Master of Interaction Design",
-            college: "College of Design and Innovation",
-            gpa: "3.91/4, 93/100, top5%. Graduated with honor",
-            period: "2023.09 - 2026.06",
-            location: "Shanghai, China",
-            courses: [
-                { name: "Interaction Design", grade: 95 },
-                { name: "Collaborative Design", grade: 95 },
-                { name: "Open Design", grade: 97 },
-                { name: "Algorithm Design", grade: 98 }
-            ],
-            advisor: null
-        },
-        {
-            university: "Soochow University",
+            university: "Hunan University",
             degree: "Bachelor of Computer Science and Technology",
-            gpa: "3.8/4, 90/100, top5%. Graduated with honor",
-            period: "2019.09 - 2023.06",
-            location: "Suzhou, China",
-            courses: [
-                { name: "Advanced Mathematics", grade: 95 },
-                { name: "C++ Programming", grade: 98 },
-                { name: "Probability and Statistics", grade: 92 },
-                { name: "Algorithm Design", grade: 92 },
-                { name: "Linear Algebra", grade: 91 }
-            ],
-            advisor: null // 此处没有导师信息
+            period: "2022.09 - 2026.06",
+            location: "Hunan, China"
         }
     ];
 
