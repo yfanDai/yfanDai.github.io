@@ -5,7 +5,7 @@ function About() {
     return (
         <div className="about" id="about">
             <div className="intro-text">
-                Hi, I'm <strong>Long Ling</strong> (凌珑, aka Lucy Ling), a <strong>Ph.D. student</strong> jointly
+                Hi, I'm <strong>Yifan Dai</strong>, a <strong>Ph.D. student</strong> jointly
                 trained by <a href="https://en.tongji.edu.cn" target="_blank" rel="noopener noreferrer">
                 Tongji University
             </a> and <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer">

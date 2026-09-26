@@ -26,7 +26,7 @@ function Hero() {
                     className="profile-pic"
                 />
                 <div className="hero-meta">
-                    <div className="meta-name">Long Ling 凌珑</div>
+                    <div className="meta-name">Yifan Dai</div>
                     Ph.D. Student @ Tongji & SII
                     <div className="meta-description">
                         <div>🔮 AI & HCI Researcher</div>

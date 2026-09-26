@@ -31,7 +31,7 @@ const STATUS_TAGS = new Set(["Selected", "In Submission", "Honorable Mention"]);
 const CONTENT = import.meta.glob("../data/content/*.json", { import: "default" });
 const FIGURES = import.meta.glob("../assets/projects/*/*.{jpg,jpeg,png,webp}", { eager: true, import: "default" });
 
-const DEFAULT_TITLE = "Long Ling | Research";
+const DEFAULT_TITLE = "Yifan Dai | Research";
 
 function splitTitle(title) {
     const i = title.indexOf(": ");
@@ -121,7 +121,7 @@ export default function ProjectPage() {
     const content = useProjectContent(id);
 
     useEffect(() => {
-        if (paper) document.title = `${splitTitle(paper.title)[0].replace(/"/g, "")} | Long Ling`;
+        if (paper) document.title = `${splitTitle(paper.title)[0].replace(/"/g, "")} | Yifan Dai`;
         return () => { document.title = DEFAULT_TITLE; };
     }, [paper]);
 

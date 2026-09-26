@@ -23,7 +23,7 @@ function projectRoutePages() {
 
       for (const { id, title } of projects) {
         const name = title.split(': ')[0].replace(/"/g, '')
-        const page = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(name)} | Long Ling</title>`)
+        const page = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(name)} | Yifan Dai</title>`)
         fs.mkdirSync(path.join(outDir, 'projects', id), { recursive: true })
         fs.writeFileSync(path.join(outDir, 'projects', id, 'index.html'), page)
       }

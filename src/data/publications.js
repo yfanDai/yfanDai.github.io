@@ -42,7 +42,7 @@ import cradle_img from "../assets/paper_image/cradle1.png";
 
 import clay_video from "../assets/video/clay.mp4";
 
-export const MY_NAME = "Long Ling";
+export const MY_NAME = "Yifan Dai";
 
 export const publications = [
     {
