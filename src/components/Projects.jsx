@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa";
+import { PiStarFill, PiStarFourFill } from "react-icons/pi";
 import { projects, getPaperLinks, projectPath } from "../data/publications.js";
 import { AuthorList } from "./PaperMeta.jsx";
 import "../css/Publications.css";
@@ -35,7 +35,10 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <span className="project-contribution">
-                                    <FaStar className="project-contribution-star" aria-hidden="true" />
+                                    <span className="project-contribution-star" aria-hidden="true">
+                                        <PiStarFill className="contributor-star-main" />
+                                        <PiStarFourFill className="contributor-star-sparkle" />
+                                    </span>
                                     {project.role}
                                 </span>
                             </div>

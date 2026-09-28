@@ -23,8 +23,44 @@
 }
 
 .project-contribution-star {
-    color: #b68126;
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
     flex-shrink: 0;
+}
+
+.contributor-star-main {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 18px;
+    height: 18px;
+    color: #ffd76b;
+    stroke: #edb64b;
+    stroke-width: 12;
+    stroke-linejoin: round;
+    transform: rotate(-12deg);
+}
+
+.contributor-star-sparkle {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    color: #8bbae6;
+}
+
+.project-contribution-star::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 3px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff5ce;
+    transform: rotate(30deg);
 }
 
 .project-footer {
