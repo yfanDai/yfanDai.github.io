@@ -84,6 +84,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem 1rem;
     width: 100%;
 }
 
@@ -117,6 +118,8 @@ a{
     justify-content: center;
     font-size: 0.8rem;
     color: var(--theme-muted);
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 .exp-location {
     font-size: 0.7rem;
@@ -125,7 +128,7 @@ a{
 .exp-role{
     font-size: 0.8rem;
     color: var(--theme-accent);
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
 }
 .exp-role a{
@@ -136,6 +139,13 @@ a{
 .exp-advisor{
     font-size: 0.8rem;
     margin-bottom: 4px;
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -173,7 +183,7 @@ a{
 
 .org-logo-container {
     flex-shrink: 0;
-    height: 2rem;
+    height: 3rem;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -192,7 +202,7 @@ a{
 }
 
 .org-logo {
-    width: 2rem;
+    width: 3rem;
     height: 100%;
     object-fit: contain;
 }
