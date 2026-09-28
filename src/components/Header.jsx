@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../css/Header.css";
-import logo from "../assets/logo.png";
 
 const NAV = [
     { id: "about", label: "About" },
@@ -39,7 +38,6 @@ export default function Header() {
         <header className={`header-wrapper ${menuOpen ? "menu-open" : ""}`}>
             <div className="header-container">
                 <div className="header-name" onClick={handleHome} style={{ cursor: "pointer" }}>
-                    <img src={logo} alt="logo" style={{ width: "36px", marginRight: 12 }} />
                     <div className="name-main">Yifan Dai</div>
                 </div>
 

@@ -114,7 +114,8 @@ a{
 .exp-period {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    text-align: right;
     justify-content: center;
     font-size: 0.8rem;
     color: var(--theme-muted);
