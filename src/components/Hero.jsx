@@ -3,7 +3,7 @@ import face from '../assets/face.jpg';
 import "../css/Hero.css"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaGoogleScholar } from "react-icons/fa6";
+import { FaGoogleScholar, FaLocationDot } from "react-icons/fa6";
 
 function Hero() {
     const links = [
@@ -24,7 +24,9 @@ function Hero() {
                 <div className="hero-meta">
                     <div className="meta-name">Yifan Dai</div>
                     Ph.D. Student @ SJTU
-                    <div className="meta-description">
+                    <div className="meta-location">
+                        <FaLocationDot className="meta-location-icon" aria-hidden="true" />
+                        <span>Beijing, China</span>
                     </div>
                     <div className="contact-small">
                         {links.map((item, index) => (
