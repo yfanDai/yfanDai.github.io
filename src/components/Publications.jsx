@@ -101,7 +101,7 @@ export default function Publications() {
                     <div key={paper.id} className="publication-card" id={paper.id}>
                         <Link to={projectPath(paper.id)} className="publication-image-link">
                             <img
-                                src={paper.image}
+                                src={paper.thumbnail ?? paper.image}
                                 alt={paper.title}
                                 className={`publication-image${paper.id === "latentomni" ? " publication-image--contain" : ""}`}
                             />

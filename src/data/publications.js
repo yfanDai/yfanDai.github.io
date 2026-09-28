@@ -6,6 +6,7 @@ import chinese_img from "../assets/paper_image/chinese.png";
 import capace_img from "../assets/paper_image/capace.png";
 import vistoria_img from "../assets/paper_image/vistoria1.png";
 import latentomni_img from "../assets/paper_image/latentomni.png";
+import latentomni_thumbnail from "../assets/paper_image/latentomni_2.png";
 import emo_img from "../assets/paper_image/emo.png";
 import image_img from "../assets/paper_image/image.png";
 import brain_img from "../assets/paper_image/brain.png";
@@ -46,6 +47,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2605.22012",
         },
         image: latentomni_img,
+        thumbnail: latentomni_thumbnail,
         tags: ["Selected", "Human-AI Collaboration", "Affective Computing", "System"],
     },
     {
