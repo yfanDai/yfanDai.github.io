@@ -31,9 +31,20 @@
     border: 1px solid #f2f2f2;
 }
 
-.publication-image--contain {
-    object-fit: contain;
+.publication-image--stacked {
+    display: grid;
+    grid-template-rows: 53% 47%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
     background: #fff;
+}
+
+.publication-image--stacked > img {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: contain;
 }
 
 .publication-content {
@@ -83,10 +94,6 @@
         border-radius: 8px;
         margin: 0.5rem;
         border: 1px solid #f2f2f2;
-    }
-
-    .publication-image--contain {
-        object-fit: contain;
     }
 
     .publication-content {
