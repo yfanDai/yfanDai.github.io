@@ -273,27 +273,27 @@ export const publications = [
         image: cof_t2i_img,
         tags: ["Selected", "Multimodal Generation", "Image Generation"],
     },
-    {
-        id: "adaptmol",
-        title: "AdaptMol: Adaptive Fusion from Sequence String to Topological Structure for Few-shot Drug Discovery",
-        abstract: "AdaptMol combines SMILES sequences and molecular graphs through adaptive attention for few-shot molecular property prediction. It uses global sequence and local structural features in a prototypical network and evaluates the approach on three benchmarks under 5-shot and 10-shot settings.",
-        authors: [
-            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
-            { name: "Xuanbai Ren" },
-            { name: "Tengfei Ma" },
-            { name: "Qipeng Yan" },
-            { name: "Yiping Liu" },
-            { name: "Yuansheng Liu" },
-            { name: "Xiangxiang Zeng", link: "https://ngcee.hnu.edu.cn/szdw/dsdw/xnbssds/rgzn/cxx.htm" },
-        ],
-        venues: [{ name: "arXiv 2025", type: "wip" }],
-        links: {
-            pdf: "https://arxiv.org/pdf/2505.11878",
-            arxiv: "https://arxiv.org/abs/2505.11878",
-        },
-        image: capace_img,
-        tags: ["Multimodal Understanding", "Molecular Property Prediction"],
-    },
+    // {
+    //     id: "adaptmol",
+    //     title: "AdaptMol: Adaptive Fusion from Sequence String to Topological Structure for Few-shot Drug Discovery",
+    //     abstract: "AdaptMol combines SMILES sequences and molecular graphs through adaptive attention for few-shot molecular property prediction. It uses global sequence and local structural features in a prototypical network and evaluates the approach on three benchmarks under 5-shot and 10-shot settings.",
+    //     authors: [
+    //         { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+    //         { name: "Xuanbai Ren" },
+    //         { name: "Tengfei Ma" },
+    //         { name: "Qipeng Yan" },
+    //         { name: "Yiping Liu" },
+    //         { name: "Yuansheng Liu" },
+    //         { name: "Xiangxiang Zeng", link: "https://ngcee.hnu.edu.cn/szdw/dsdw/xnbssds/rgzn/cxx.htm" },
+    //     ],
+    //     venues: [{ name: "arXiv 2025", type: "wip" }],
+    //     links: {
+    //         pdf: "https://arxiv.org/pdf/2505.11878",
+    //         arxiv: "https://arxiv.org/abs/2505.11878",
+    //     },
+    //     image: capace_img,
+    //     tags: ["Multimodal Understanding", "Molecular Property Prediction"],
+    // },
 ];
 
 export const projects = [
