@@ -100,14 +100,11 @@ export default function Publications() {
                 {filteredPublications.map((paper) => (
                     <div key={paper.id} className="publication-card" id={paper.id}>
                         <Link to={projectPath(paper.id)} className="publication-image-link">
-                            {paper.thumbnail ? (
-                                <div className="publication-image publication-image--stacked">
-                                    <img src={paper.thumbnail} alt={`${paper.title} results illustration`} />
-                                    <img src={paper.image} alt={`${paper.title} method illustration`} />
-                                </div>
-                            ) : (
-                                <img src={paper.image} alt={paper.title} className="publication-image" />
-                            )}
+                            <img
+                                src={paper.thumbnail ?? paper.image}
+                                alt={paper.title}
+                                className={`publication-image${paper.thumbnail ? " publication-image--contain" : ""}`}
+                            />
                         </Link>
 
                         <div className="publication-content">
@@ -134,6 +131,11 @@ export default function Publications() {
                                         {link.label}
                                     </a>
                                 ))}
+                                {paper.thumbnail && (
+                                    <a href={paper.thumbnail} target="_blank" rel="noopener noreferrer">
+                                        Full figure
+                                    </a>
+                                )}
                                 {paper.links.msg && (
                                     <div className={"publications-msg"}>{paper.links.msg}</div>
                                 )}
