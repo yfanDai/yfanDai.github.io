@@ -39,7 +39,7 @@ export default function Header() {
             <div className="header-container">
                 <div className="header-name" onClick={handleHome} style={{ cursor: "pointer" }}>
                     <img src={logo} alt="logo" style={{ width: "36px", marginRight: 12 }} />
-                    <div className="name-main">Long L<span className="fancy-i">i</span>ng</div>
+                    <div className="name-main">Yifan Dai</div>
                 </div>
 
                 {/* 汉堡按钮 */}
