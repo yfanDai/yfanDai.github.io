@@ -2,7 +2,8 @@
 .publications-select{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
     align-items: center;
 }
 .publications-list {
@@ -33,6 +34,7 @@
 
 .publication-content {
     flex: 1;
+    min-width: 0;
     display: flex;
     min-height: 160px;
     flex-direction: column;
@@ -64,6 +66,26 @@
     cursor: pointer;
 }
 
+/* The sidebar leaves less room for paper text on small desktop windows. */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .publications .publication-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .publications .publication-image-link {
+        align-self: center;
+    }
+
+    .publications .publication-image {
+        margin: 0.5rem 0;
+    }
+
+    .publications .publication-content {
+        min-height: 0;
+        padding-bottom: 0.5rem;
+    }
+}
 
 @media (max-width: 1000px) {
     .publication-card {
@@ -203,6 +225,9 @@
 /* ===== 每篇论文的 Tag ===== */
 .publication-tags {
     margin: 4px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .tag-item {
@@ -212,8 +237,9 @@
     cursor: pointer;
 }
 .tag-item-show {
-    margin-right: 4px;
-    white-space: nowrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
     display: inline-block;
     background-color: var(--theme-accent-wash);
     border-radius: 99px;
@@ -222,6 +248,11 @@
     color: var(--theme-muted);
 }
 
+.research-area-tag {
+    background-color: var(--theme-accent-soft);
+    color: var(--theme-accent-text);
+    font-weight: 600;
+}
 
 .tag-item:hover {
     text-decoration: underline;
@@ -265,38 +296,6 @@
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-.submission-tag{
-    margin-right: 8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: var(--theme-muted);
-}
-.submission-tag.active{
-    margin-right: 8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    background: #cccccc;
-    color: white;
-    border-radius: 99px;
-    padding: 0px 8px;
-}
-.award-tag-all{
-    background: #FFF4D6;
-    color: #805C12;
-    font-weight: bold;
-}
-.submission-tag-all{
-    white-space: nowrap;
-    display: inline-block;
-    font-weight: bold;
-    background: var(--theme-badge-neutral);
-    color: var(--theme-muted);
-    border-radius: 99px;
-    padding: 0px 8px;
 }
 
 .publications-info-small{

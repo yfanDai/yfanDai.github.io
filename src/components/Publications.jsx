@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Publications.css";
-import { publications, tagColors, tagStyleMap, getPaperLinks, projectPath } from "../data/publications.js";
+import { publications, RESEARCH_AREAS, PUBLICATION_TOPICS, getPaperLinks, projectPath } from "../data/publications.js";
 import { VenueTags, AuthorList, PaperTag } from "./PaperMeta.jsx";
 
 export default function Publications() {
@@ -10,14 +10,6 @@ export default function Publications() {
     const filteredPublications = selectedTag
         ? publications.filter((p) => p.tags.includes(selectedTag))
         : publications;
-
-    const handleTagClick = (tag) => {
-        setSelectedTag(selectedTag === tag ? "" : tag);
-    };
-    const handleSelectChange = (event) => {
-        const newTag = event.target.value;
-        handleTagClick(newTag);
-    };
 
     return (
         <div className="publications" id="publications" style={{marginTop:"1rem"}}>
@@ -29,68 +21,25 @@ export default function Publications() {
                 <select
                     className="tag-select-filter"
                     value={selectedTag}
-                    onChange={handleSelectChange}
-                    style={{background: `${tagColors[selectedTag]}`}}
+                    onChange={(event) => setSelectedTag(event.target.value)}
+                    aria-label="Filter publications by research area or topic"
                 >
                     <option value="">All</option>
-                    {Object.keys(tagStyleMap).map((tag) => (
-                        <option key={tag} value={tag}>
-                            {tag}
-                        </option>
-                    ))}
-
+                    <option value="Selected">Selected</option>
+                    <optgroup label="Research Areas">
+                        {RESEARCH_AREAS.map((tag) => (
+                            <option key={tag} value={tag}>{tag}</option>
+                        ))}
+                    </optgroup>
+                    <optgroup label="Topics">
+                        {PUBLICATION_TOPICS.map((tag) => (
+                            <option key={tag} value={tag}>{tag}</option>
+                        ))}
+                    </optgroup>
                 </select>
             </div>
 
-            {/*<div className="tag-filter">*/}
-            {/*    <span*/}
-            {/*        className={`${selectedTag === "Selected" ? "active" : ""} rainbow-tag`}*/}
-            {/*        style={{color: tagStyleMap["Selected"]}}*/}
-            {/*        onClick={() => handleTagClick("Selected")}*/}
-            {/*    >*/}
-            {/*            #Selected*/}
-            {/*        </span>*/}
-            {/*    <span*/}
-            {/*        key={"In Submission"}*/}
-            {/*        className={`${selectedTag === "In Submission" ? "active" : ""} submission-tag`}*/}
-            {/*        onClick={() => handleTagClick("In Submission")}*/}
-            {/*    >*/}
-            {/*            #In Submission*/}
-            {/*        </span>*/}
-                {/*{Object.keys(tagStyleMap).map((tag) => {*/}
-                {/*        if (tag === "Selected") {*/}
-                {/*            return (<span*/}
-                {/*                key={tag}*/}
-                {/*                className={`${selectedTag === tag ? "active" : ""} rainbow-tag`}*/}
-                {/*                style={{color: tagStyleMap[tag]}}*/}
-                {/*                onClick={() => handleTagClick(tag)}*/}
-                {/*            >*/}
-                {/*        #{tag}*/}
-                {/*    </span>)*/}
-                {/*        } else if (tag === "In Submission") {*/}
-                {/*            return (<span*/}
-                {/*                key={tag}*/}
-                {/*                className={`${selectedTag === tag ? "active" : ""} submission-tag`}*/}
-                {/*                onClick={() => handleTagClick(tag)}*/}
-                {/*            >*/}
-                {/*        #{tag}*/}
-                {/*    </span>)*/}
-                {/*        }*/}
-                {/*        // else return (<span*/}
-                {/*        //     key={tag}*/}
-                {/*        //     className={`filter-tag ${selectedTag === tag ? "active" : ""}`}*/}
-                {/*        //     style={{color: tagStyleMap[tag]}}*/}
-                {/*        //     onClick={() => handleTagClick(tag)}*/}
-                {/*        // >*/}
-                {/*        //     #{tag}*/}
-                {/*        // </span>)*/}
-                {/*    }*/}
-                {/*)}*/}
-            {/*</div>*/}
-
             <div className="publications-info">
-                {/*My publications reflect my ongoing exploration of human–AI interaction and creativity support.*/}
-                {/*You can click on the tags below to filter papers by topic or research area.*/}
                 <div className="publications-info-small">* indicates equal contribution, and † denotes the advising
                     professor.</div>
             </div>

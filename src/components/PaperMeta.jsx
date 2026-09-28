@@ -1,5 +1,5 @@
 import React from "react";
-import { MY_NAME, AUTHOR_SYMBOLS, tagColors } from "../data/publications.js";
+import { MY_NAME, AUTHOR_SYMBOLS, tagColors, RESEARCH_AREAS } from "../data/publications.js";
 
 export function VenueTags({ venues }) {
     return (
@@ -41,11 +41,6 @@ export function PaperTag({ tag }) {
     if (tag === "Selected") {
         return <span className="tag-item-show selected-tag-all">#{tag}</span>;
     }
-    if (tag === "Honorable Mention") {
-        return <span className="tag-item-show award-tag-all">🏆 {tag}</span>;
-    }
-    if (tag === "In Submission") {
-        return <span className="tag-item-show submission-tag-all">#{tag}</span>;
-    }
-    return <span className="tag-item-show">#{tag}</span>;
+    const areaClass = RESEARCH_AREAS.includes(tag) ? " research-area-tag" : "";
+    return <span className={`tag-item-show${areaClass}`}>#{tag}</span>;
 }

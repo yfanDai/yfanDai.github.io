@@ -10,6 +10,7 @@ export default function Internship() {
             logo: kling,
         },
         period: "2025.11 - 2026.09",
+        location: "Beijing, China",
         role: "Research Intern, Foundation Model Team",
     };
 
@@ -47,12 +48,15 @@ export default function Internship() {
                                     </a>
                                     <div className="exp-role">{experience.role}</div>
                                 </div>
-                                <div className="exp-period">{experience.period}</div>
+                                <div className="exp-period">
+                                    <div>{experience.period}</div>
+                                    <div className="exp-location">{experience.location}</div>
+                                </div>
                             </div>
 
                             <ul className="exp-details">
                                 <li>
-                                    <strong>Omni Pre-training:</strong> Contributed to pre-training next-generation Omni foundation models.
+                                    <strong>Omni Pre-training:</strong> Contributed to pre-training Omni understanding foundation models.
                                 </li>
                                 <li>
                                     <strong>Audio Understanding:</strong> Conducted model training and systematic evaluation for the Audio Understanding component.

@@ -26,7 +26,7 @@ const LINK_ICONS = {
     video: <FaPlay/>,
 };
 
-const STATUS_TAGS = new Set(["Selected", "In Submission", "Honorable Mention"]);
+const STATUS_TAGS = new Set(["Selected"]);
 
 const CONTENT = import.meta.glob("../data/content/*.json", { import: "default" });
 const FIGURES = import.meta.glob("../assets/projects/*/*.{jpg,jpeg,png,webp}", { eager: true, import: "default" });

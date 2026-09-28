@@ -49,7 +49,7 @@ export const publications = [
         },
         image: latentomni_img,
         thumbnail: latentomni_thumbnail,
-        tags: ["Selected", "Human-AI Collaboration", "Affective Computing", "System"],
+        tags: ["Selected", "Multimodal Understanding", "Audio Video Understanding"],
     },
     {
         id: "human-centric-captioning",
@@ -77,7 +77,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2609.08300",
         },
         image: human_cap_img,
-        tags: ["Selected", "Computer Vision", "Affective Computing", "Machine Learning"],
+        tags: ["Selected", "Multimodal Understanding", "Image Captioning"],
     },
     {
         id: "flux-opd",
@@ -104,7 +104,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2607.28022",
         },
         image: flux_opd_img,
-        tags: ["Selected", "Human-AI Collaboration", "Creativity Support", "Multimodal Interaction", "System"],
+        tags: ["Selected", "Multimodal Understanding", "Prompt Optimization"],
     },
     {
         id: "keyframe-compass",
@@ -139,7 +139,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2607.14202",
         },
         image: keyframe_compass_img,
-        tags: ["Cultural & Philosophical", "Understanding People"],
+        tags: ["Multimodal Generation", "Video Generation"],
     },
     {
         id: "artifact-bench",
@@ -177,7 +177,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2605.18984",
         },
         image: artifact_bench_img,
-        tags: ["Honorable Mention", "Human-AI Collaboration", "Cultural & Philosophical", "Understanding People"],
+        tags: ["Multimodal Understanding", "Video Quality Assessment"],
     },
     {
         id: "edit-compass",
@@ -201,7 +201,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2605.13062",
         },
         image: edit_compass_img,
-        tags: ["Human-AI Collaboration", "Creativity Support", "Cognitive Augmentation"],
+        tags: ["Multimodal Generation", "Image Editing"],
     },
     {
         id: "world-models",
@@ -242,7 +242,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2602.01630",
         },
         image: research_on_wm_img,
-        tags: ["Human-AI Collaboration", "Affective Computing", "Cultural & Philosophical", "Understanding People"],
+        tags: ["Unified Multimodal Models", "World Models"],
     },
     {
         id: "cof-t2i",
@@ -271,7 +271,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2601.10061",
         },
         image: cof_t2i_img,
-        tags: ["Selected", "Agent Harness", "Human-AI Collaboration", "Cognitive Augmentation", "System", "Multimodal Interaction"],
+        tags: ["Selected", "Multimodal Generation", "Image Generation"],
     },
     {
         id: "adaptmol",
@@ -292,7 +292,7 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2505.11878",
         },
         image: capace_img,
-        tags: ["Cognitive Augmentation", "Machine Learning", "Embodied Interaction", "System"],
+        tags: ["Multimodal Understanding", "Molecular Property Prediction"],
     },
 ];
 
@@ -353,7 +353,7 @@ export const projects = [
             github: "https://github.com/OpenDCAI/OpenWorldLib",
         },
         image: openworldlib_img,
-        tags: ["Human-AI Collaboration", "Creativity Support", "Cultural & Philosophical", "Digital Fabrication"],
+        tags: ["Unified Multimodal Models", "World Models"],
     },
     {
         id: "gamefactory-3a",
@@ -369,7 +369,7 @@ export const projects = [
             github: "https://github.com/OpenDCAI/GameFactory-3A",
         },
         image: gamefactory_img,
-        tags: ["Game Generation", "Generative AI", "3D Assets"],
+        tags: ["Multimodal Generation", "Game Generation"],
     },
 ];
 
@@ -383,25 +383,17 @@ export const tagColors = {
     exhibition: "exhibition",
 };
 
-// 给不同tag分配不同颜色
-export const tagStyleMap = {
-    "Selected": "#242424",
-    "Honorable Mention": "#C98A00",
-    "In Submission":"#cccccc",
-    "Human-AI Collaboration": "#ff7f96",
-    "Creativity Support": "#ffb07f",
-    "Affective Computing": "#ffcd49",
-    "Cultural & Philosophical": "#f3dc12",
-    "Machine Learning": "#b8cc7d",
-    "Cognitive Augmentation": "#7dcd6f",
-    "Computer Vision":"#6fcda6",
-    "Digital Fabrication": "#87dcdc",
-    "Embodied Interaction": "#7fcaff",
-    "Multimodal Interaction": "#7f9dff",
-    "System": "#9b7fff",
-    "Survey": "#c57fff",
-    "Understanding People": "#ff7fb9",
-};
+export const RESEARCH_AREAS = [
+    "Multimodal Understanding",
+    "Multimodal Generation",
+    "Unified Multimodal Models",
+];
+
+// Keep topic filters in sync with the tags used by publications.
+export const PUBLICATION_TOPICS = [...new Set(
+    publications.flatMap((paper) => paper.tags)
+        .filter((tag) => tag !== "Selected" && !RESEARCH_AREAS.includes(tag))
+)];
 
 export const LINK_LABELS = [
     ["pdf", "PDF"],
