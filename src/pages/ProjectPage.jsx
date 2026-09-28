@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import { SiArxiv } from "react-icons/si";
 import "../css/Project.css";
-import { publications, getPaperLinks, getPublication, projectPath } from "../data/publications.js";
+import { publications, projects, getPaperLinks, getPublication, projectPath } from "../data/publications.js";
 import { CITATIONS } from "../data/citations.js";
 import { AuthorList } from "../components/PaperMeta.jsx";
 
@@ -128,9 +128,11 @@ export default function ProjectPage() {
     if (!paper) return <Navigate to="/#publications" replace />;
 
     const [heading, subtitle] = splitTitle(paper.title);
-    const index = publications.indexOf(paper);
-    const prev = publications[index - 1];
-    const next = publications[index + 1];
+    const isProject = projects.includes(paper);
+    const collection = isProject ? projects : publications;
+    const index = collection.indexOf(paper);
+    const prev = collection[index - 1];
+    const next = collection[index + 1];
     const links = getPaperLinks(paper);
     const related = (paper.related || []).map(getPublication).filter(Boolean);
     const authorNotes = [
@@ -145,12 +147,13 @@ export default function ProjectPage() {
         <main className="project-page">
             <div className="project-container">
                 <Link to={`/#${paper.id}`} className="project-back">
-                    <FaArrowLeft/> Back to Publications
+                    <FaArrowLeft/> Back to {isProject ? "Project" : "Publications"}
                 </Link>
 
                 <div className="project-header">
                     <div className="project-eyebrow">
                         {venueLine(paper)}
+                        {paper.role && <span> · Yifan Dai: {paper.role}</span>}
                         {paper.award && <span className="project-award"> · 🏆 {paper.award}</span>}
                     </div>
 

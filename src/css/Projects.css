@@ -1,0 +1,35 @@
+.projects {
+    margin-top: 1rem;
+}
+
+.project-card .publication-content {
+    min-width: 0;
+    min-height: 0;
+}
+
+.project-contribution {
+    color: var(--theme-accent-text);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-summary {
+    margin: 0.4rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--theme-muted);
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .project-card .publication-image {
+        width: 100%;
+        max-width: 320px;
+        margin-right: 0;
+    }
+}

@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import News from "../components/News.jsx";
 import Publications from "../components/Publications";
+import Projects from "../components/Projects.jsx";
 import Internship from "../components/Internship";
 import Education from "../components/Education.jsx";
 import SelectedAwards from "../components/SelectedAwards.jsx";
@@ -32,6 +33,7 @@ export default function Home() {
                     <About />
                     <News />
                     <Publications />
+                    <Projects />
                     <Internship />
                     <Education />
                     <SelectedAwards />

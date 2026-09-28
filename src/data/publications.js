@@ -1,6 +1,6 @@
 // Paper metadata checked against https://scholar.google.com/citations?user=zU8iSjoAAAAJ&hl=en on 2026-09-26.
 import cradle_img from "../assets/paper_image/cradle1.png";
-import clay_img from "../assets/paper_image/clay.png";
+import openworldlib_img from "../assets/paper_image/openworldlib.png";
 import capace_img from "../assets/paper_image/capace.png";
 import latentomni_img from "../assets/paper_image/latentomni.png";
 import latentomni_thumbnail from "../assets/paper_image/latentomni_stacked.png";
@@ -203,63 +203,6 @@ export const publications = [
         tags: ["Human-AI Collaboration", "Creativity Support", "Cognitive Augmentation"],
     },
     {
-        id: "openworldlib",
-        title: "Openworldlib: A unified codebase and definition of advanced world models",
-        abstract: "OpenWorldLib defines advanced world models around perception, interaction, and long-term memory. It provides a standardized inference framework that combines models from different tasks for reuse and collaborative reasoning.",
-        authors: [
-            { name: "DataFlow Team" },
-            { name: "Bohan Zeng" },
-            { name: "Daili Hua" },
-            { name: "Kaixin Zhu" },
-            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
-            { name: "Bozhou Li" },
-            { name: "Yuran Wang" },
-            { name: "Chengzhuo Tong" },
-            { name: "Yifan Yang" },
-            { name: "Mingkun Chang" },
-            { name: "Jianbin Zhao" },
-            { name: "Zhou Liu" },
-            { name: "Hao Liang" },
-            { name: "Xiaochen Ma" },
-            { name: "Ruichuan An" },
-            { name: "Junbo Niu" },
-            { name: "Zimo Meng" },
-            { name: "Tianyi Bai" },
-            { name: "Meiyi Qiang" },
-            { name: "Huanyao Zhang" },
-            { name: "Zhiyou Xiao" },
-            { name: "Tianyu Guo" },
-            { name: "Qinhan Yu" },
-            { name: "Runhao Zhao" },
-            { name: "Zhengpin Li" },
-            { name: "Xinyi Huang" },
-            { name: "Yisheng Pan" },
-            { name: "Yiwen Tang" },
-            { name: "Juanxi Tian" },
-            { name: "Yang Shi" },
-            { name: "Yue Ding" },
-            { name: "Xinlong Chen" },
-            { name: "Hongcheng Gao" },
-            { name: "Minglei Shi" },
-            { name: "Jialong Wu" },
-            { name: "Zekun Wang" },
-            { name: "Yuanxing Zhang" },
-            { name: "Xintao Wang" },
-            { name: "Pengfei Wan" },
-            { name: "Yiren Song" },
-            { name: "Mike Zheng Shou" },
-            { name: "Wentao Zhang" },
-        ],
-        venues: [{ name: "Technical Report 2026", type: "wip" }],
-        links: {
-            pdf: "https://arxiv.org/pdf/2604.04707",
-            arxiv: "https://arxiv.org/abs/2604.04707",
-            github: "https://github.com/OpenDCAI/OpenWorldLib",
-        },
-        image: clay_img,
-        tags: ["Human-AI Collaboration", "Creativity Support", "Cultural & Philosophical", "Digital Fabrication"],
-    },
-    {
         id: "world-models",
         title: "Research on world models is not merely injecting world knowledge into specific tasks",
         abstract: "This paper argues that adding world knowledge to separate tasks does not by itself produce a coherent world model. It proposes a unified design perspective that brings together perception, interaction, symbolic reasoning, and spatial representation.",
@@ -352,6 +295,67 @@ export const publications = [
     },
 ];
 
+export const projects = [
+    {
+        id: "openworldlib",
+        title: "OpenWorldLib: A unified codebase and definition of advanced world models",
+        role: "Core Contributor",
+        abstract: "OpenWorldLib defines advanced world models around perception, interaction, and long-term memory. It provides a standardized inference framework that combines models from different tasks for reuse and collaborative reasoning.",
+        authors: [
+            { name: "DataFlow Team" },
+            { name: "Bohan Zeng" },
+            { name: "Daili Hua" },
+            { name: "Kaixin Zhu" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Bozhou Li" },
+            { name: "Yuran Wang" },
+            { name: "Chengzhuo Tong" },
+            { name: "Yifan Yang" },
+            { name: "Mingkun Chang" },
+            { name: "Jianbin Zhao" },
+            { name: "Zhou Liu" },
+            { name: "Hao Liang" },
+            { name: "Xiaochen Ma" },
+            { name: "Ruichuan An" },
+            { name: "Junbo Niu" },
+            { name: "Zimo Meng" },
+            { name: "Tianyi Bai" },
+            { name: "Meiyi Qiang" },
+            { name: "Huanyao Zhang" },
+            { name: "Zhiyou Xiao" },
+            { name: "Tianyu Guo" },
+            { name: "Qinhan Yu" },
+            { name: "Runhao Zhao" },
+            { name: "Zhengpin Li" },
+            { name: "Xinyi Huang" },
+            { name: "Yisheng Pan" },
+            { name: "Yiwen Tang" },
+            { name: "Juanxi Tian" },
+            { name: "Yang Shi" },
+            { name: "Yue Ding" },
+            { name: "Xinlong Chen" },
+            { name: "Hongcheng Gao" },
+            { name: "Minglei Shi" },
+            { name: "Jialong Wu" },
+            { name: "Zekun Wang" },
+            { name: "Yuanxing Zhang" },
+            { name: "Xintao Wang" },
+            { name: "Pengfei Wan" },
+            { name: "Yiren Song" },
+            { name: "Mike Zheng Shou" },
+            { name: "Wentao Zhang" },
+        ],
+        venues: [{ name: "Technical Report 2026", type: "wip" }],
+        links: {
+            pdf: "https://arxiv.org/pdf/2604.04707",
+            arxiv: "https://arxiv.org/abs/2604.04707",
+            github: "https://github.com/OpenDCAI/OpenWorldLib",
+        },
+        image: openworldlib_img,
+        tags: ["Human-AI Collaboration", "Creativity Support", "Cultural & Philosophical", "Digital Fabrication"],
+    },
+];
+
 export const tagColors = {
     conference: "conference",
     journal: "journal",
@@ -411,5 +415,5 @@ export function projectPath(id) {
 }
 
 export function getPublication(id) {
-    return publications.find((p) => p.id === id);
+    return publications.find((p) => p.id === id) ?? projects.find((p) => p.id === id);
 }

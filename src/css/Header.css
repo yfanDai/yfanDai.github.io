@@ -187,6 +187,12 @@ button:active {
 }
 
 /* 移动端专属样式 */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .header-nav {
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 1000px) {
     .header-container {
         padding: 0.8rem 1rem;
