@@ -5,18 +5,11 @@ function About() {
     return (
         <div className="about" id="about">
             <div className="intro-text">
-                Hi, I'm <strong>Yifan Dai</strong>, a <strong>Ph.D. student</strong> jointly
-                trained by <a href="https://en.tongji.edu.cn" target="_blank" rel="noopener noreferrer">
-                Tongji University
-            </a> and <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer">
-                Shanghai Innovation Institute (SII)
-            </a>, advised by <a href="https://guitaowufeng.github.io/" target="_blank" rel="noopener noreferrer">
-                Prof. Tao Gui
-            </a> at the <a href="https://nlp.fudan.edu.cn/" target="_blank" rel="noopener noreferrer">
-                Fudan NLP Group
-            </a>. I hold a master's in <strong>Interaction Design</strong> from Tongji's <a
-                href="https://tjdi.tongji.edu.cn/?lang=en" target="_blank" rel="noopener noreferrer">
-                College of Design and Innovation</a> and a bachelor's in <strong>Computer Science</strong>, and
+                Hi, I'm <strong>Yifan Dai</strong>, a <strong>Ph.D. student</strong> from <a href="https://sai.sjtu.edu.cn" target="_blank" rel="noopener noreferrer">
+                Shanghai Jiao Tong University
+            </a>, advised by <a href="https://zwt233.github.io/" target="_blank" rel="noopener noreferrer">
+                Prof. Wentao Zhang
+            </a> at the PKU DCAI Group. I hold a bachelor's in <strong>Computer Science</strong>, and
                 have worked closely with <a href="https://raylc.org/" target="_blank" rel="noopener noreferrer">
                 Prof. Ray LC
             </a> (<a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener noreferrer">CityU</a>) and <a
