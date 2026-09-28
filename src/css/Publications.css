@@ -32,6 +32,11 @@
 }
 
 .publication-image--contain {
+    display: block;
+    width: min(320px, 25vw);
+    height: auto;
+    box-sizing: border-box;
+    padding: 8px 0;
     object-fit: contain;
     background: #fff;
 }
@@ -83,6 +88,10 @@
         border-radius: 8px;
         margin: 0.5rem;
         border: 1px solid #f2f2f2;
+    }
+
+    .publication-image--contain {
+        object-fit: contain;
     }
 
     .publication-content {
