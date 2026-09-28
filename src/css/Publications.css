@@ -254,9 +254,17 @@
 
 
 .selected-tag-all {
-    background: var(--theme-accent);
+    background: linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d, #7dcd6f, #6fcda6, #87dcdc, #7fcaff, #7f9dff, #9b7fff, #c57fff, #ff7fb9);
+    background-size: 400% 400%;
     color: #fff;
     font-weight: 700;
+    animation: rainbowFlow 4s ease infinite;
+}
+
+@keyframes rainbowFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .submission-tag{
