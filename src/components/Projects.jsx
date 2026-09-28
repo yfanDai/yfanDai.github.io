@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
 import { projects, getPaperLinks, projectPath } from "../data/publications.js";
+import { AuthorList } from "./PaperMeta.jsx";
 import "../css/Publications.css";
 import "../css/Projects.css";
 
@@ -15,19 +17,25 @@ export default function Projects() {
                             <img src={project.image} alt={project.title} className="publication-image" />
                         </Link>
                         <div className="publication-content">
-                            <div className="project-contribution">
-                                <strong>Yifan Dai</strong> · {project.role}
-                            </div>
                             <Link to={projectPath(project.id)} className="publication-title">
                                 {project.title}
                             </Link>
+                            <div className="publication-authors">
+                                <AuthorList authors={project.authors} />
+                            </div>
                             <p className="project-summary">{project.abstract}</p>
-                            <div className="publication-links">
-                                {getPaperLinks(project).map((link) => (
-                                    <a key={link.key} href={link.url} target="_blank" rel="noopener noreferrer">
-                                        {link.label}
-                                    </a>
-                                ))}
+                            <div className="project-footer">
+                                <div className="publication-links">
+                                    {getPaperLinks(project).map((link) => (
+                                        <a key={link.key} href={link.url} target="_blank" rel="noopener noreferrer">
+                                            {link.label}
+                                        </a>
+                                    ))}
+                                </div>
+                                <span className="project-contribution">
+                                    <FaStar className="project-contribution-star" aria-hidden="true" />
+                                    {project.role}
+                                </span>
                             </div>
                         </div>
                     </div>

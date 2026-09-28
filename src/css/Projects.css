@@ -8,9 +8,36 @@
 }
 
 .project-contribution {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: auto;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--theme-accent-border);
+    border-radius: 999px;
+    background: var(--theme-accent-wash);
     color: var(--theme-accent-text);
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 600;
+    white-space: nowrap;
+}
+
+.project-contribution-star {
+    color: #b68126;
+    flex-shrink: 0;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-footer .publication-links {
+    margin-top: 0;
 }
 
 .project-summary {
