@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import News from "../components/News.jsx";
+// import News from "../components/News.jsx";
 import Publications from "../components/Publications";
 import Projects from "../components/Projects.jsx";
 import Internship from "../components/Internship";
@@ -31,7 +31,7 @@ export default function Home() {
             <div className="right-content">
                 <div style={{margin: "2rem"}}>
                     <About />
-                    <News />
+                    {/* <News /> */}
                     <Publications />
                     <Projects />
                     <Internship />

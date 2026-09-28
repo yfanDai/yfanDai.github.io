@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 const NAV = [
     { id: "about", label: "About" },
-    { id: "news", label: "News" },
+    // { id: "news", label: "News" },
     { id: "publications", label: "Publications" },
     { id: "projects", label: "Project" },
     { id: "internship", label: "Internship" },
