@@ -103,7 +103,7 @@ export default function Publications() {
                             <img
                                 src={paper.thumbnail ?? paper.image}
                                 alt={paper.title}
-                                className={`publication-image${paper.thumbnail ? " publication-image--contain" : ""}`}
+                                className={`publication-image${paper.thumbnail || paper.imageFit === "contain" ? " publication-image--contain" : ""}`}
                             />
                         </Link>
 

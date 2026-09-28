@@ -1,15 +1,15 @@
 // Paper metadata checked against https://scholar.google.com/citations?user=zU8iSjoAAAAJ&hl=en on 2026-09-26.
-import huabu_img from "../assets/paper_image/huabu.png";
 import cradle_img from "../assets/paper_image/cradle1.png";
 import clay_img from "../assets/paper_image/clay.png";
-import chinese_img from "../assets/paper_image/chinese.png";
 import capace_img from "../assets/paper_image/capace.png";
-import vistoria_img from "../assets/paper_image/vistoria1.png";
 import latentomni_img from "../assets/paper_image/latentomni.png";
 import latentomni_thumbnail from "../assets/paper_image/latentomni_stacked.png";
-import emo_img from "../assets/paper_image/emo.png";
-import image_img from "../assets/paper_image/image.png";
-import brain_img from "../assets/paper_image/brain.png";
+import artifact_bench_img from "../assets/paper_image/artifact_bench.png";
+import cof_t2i_img from "../assets/paper_image/cof_t2i.png";
+import edit_compass_img from "../assets/paper_image/edit_compass.png";
+import flux_opd_img from "../assets/paper_image/flux_opd.png";
+import human_cap_img from "../assets/paper_image/human_cap.png";
+import keyframe_compass_img from "../assets/paper_image/keyframe_compass.png";
 
 export const MY_NAME = "Yifan Dai";
 
@@ -38,7 +38,7 @@ export const publications = [
             { name: "Yushuo Guan" },
             { name: "Yuanxing Zhang" },
             { name: "Pengfei Wan" },
-            { name: "Fangcheng Fu" },
+            { name: "Fangcheng Fu", link: "https://ccchengff.github.io/" },
             { name: "Wentao Zhang" },
         ],
         venues: [{ name: "NeurIPS 2026", type: "conference" }],
@@ -75,7 +75,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2609.08300",
             arxiv: "https://arxiv.org/abs/2609.08300",
         },
-        image: emo_img,
+        image: human_cap_img,
+        imageFit: "contain",
         tags: ["Selected", "Computer Vision", "Affective Computing", "Machine Learning"],
     },
     {
@@ -102,7 +103,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2607.28022",
             arxiv: "https://arxiv.org/abs/2607.28022",
         },
-        image: vistoria_img,
+        image: flux_opd_img,
+        imageFit: "contain",
         tags: ["Selected", "Human-AI Collaboration", "Creativity Support", "Multimodal Interaction", "System"],
     },
     {
@@ -137,7 +139,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2607.14202",
             arxiv: "https://arxiv.org/abs/2607.14202",
         },
-        image: image_img,
+        image: keyframe_compass_img,
+        imageFit: "contain",
         tags: ["Cultural & Philosophical", "Understanding People"],
     },
     {
@@ -175,7 +178,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2605.18984",
             arxiv: "https://arxiv.org/abs/2605.18984",
         },
-        image: chinese_img,
+        image: artifact_bench_img,
+        imageFit: "contain",
         tags: ["Honorable Mention", "Human-AI Collaboration", "Cultural & Philosophical", "Understanding People"],
     },
     {
@@ -199,7 +203,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2605.13062",
             arxiv: "https://arxiv.org/abs/2605.13062",
         },
-        image: brain_img,
+        image: edit_compass_img,
+        imageFit: "contain",
         tags: ["Human-AI Collaboration", "Creativity Support", "Cognitive Augmentation"],
     },
     {
@@ -326,7 +331,8 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2601.10061",
             arxiv: "https://arxiv.org/abs/2601.10061",
         },
-        image: huabu_img,
+        image: cof_t2i_img,
+        imageFit: "contain",
         tags: ["Selected", "Agent Harness", "Human-AI Collaboration", "Cognitive Augmentation", "System", "Multimodal Interaction"],
     },
     {
@@ -340,7 +346,7 @@ export const publications = [
             { name: "Qipeng Yan" },
             { name: "Yiping Liu" },
             { name: "Yuansheng Liu" },
-            { name: "Xiangxiang Zeng" },
+            { name: "Xiangxiang Zeng", link: "https://ngcee.hnu.edu.cn/szdw/dsdw/xnbssds/rgzn/cxx.htm" },
         ],
         venues: [{ name: "arXiv 2025", type: "wip" }],
         links: {

@@ -9,13 +9,7 @@ function About() {
                 Shanghai Jiao Tong University
             </a>, advised by <a href="https://zwt233.github.io/" target="_blank" rel="noopener noreferrer">
                 Prof. Wentao Zhang
-            </a> at the PKU DCAI Group. I hold a bachelor's in <strong>Computer Science</strong>, and
-                have worked closely with <a href="https://raylc.org/" target="_blank" rel="noopener noreferrer">
-                Prof. Ray LC
-            </a> (<a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener noreferrer">CityU</a>) and <a
-                href="https://toby.li/" target="_blank" rel="noopener noreferrer">
-                Prof. Toby Jia-Jun Li
-            </a> (<a href="https://www.nd.edu/" target="_blank" rel="noopener noreferrer">Notre Dame</a>).
+            </a> at the PKU DCAI Group. I received my bachelor's degree in Computer Science and Technology from Hunan University. I have also worked closely with <a href="https://ccchengff.github.io/" target="_blank" rel="noopener noreferrer">Fangcheng Fu</a> (SJTU), <a href="https://ngcee.hnu.edu.cn/szdw/dsdw/xnbssds/rgzn/cxx.htm" target="_blank" rel="noopener noreferrer">Xiangxiang Zeng</a> (HNU), and <a href="https://csce.suat-sz.edu.cn/info/1011/1461.htm" target="_blank" rel="noopener noreferrer">Xiangzheng Fu</a> (SUAT).
                 <br/><br/>
                 {/* My research interests focus on <strong>human–AI interaction for supporting human creativity</strong> to
                 achieve better cognitive support and creative collaboration, by designing interaction forms and
