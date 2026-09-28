@@ -9,11 +9,11 @@ export default function SelectedAwards() {
         },
         {
             text: "[2025] National Scholarship ",
-            highlight: "(Top 1%)"
+            highlight: "(Top 0.5%)"
         },
         {
             text: "[2024] National Scholarship ",
-            highlight: "(Top 1%)",
+            highlight: "(Top 0.5%)",
         },
         {
             text: "[2023] National Scholarship ",
