@@ -76,7 +76,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2609.08300",
         },
         image: human_cap_img,
-        imageFit: "contain",
         tags: ["Selected", "Computer Vision", "Affective Computing", "Machine Learning"],
     },
     {
@@ -104,7 +103,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2607.28022",
         },
         image: flux_opd_img,
-        imageFit: "contain",
         tags: ["Selected", "Human-AI Collaboration", "Creativity Support", "Multimodal Interaction", "System"],
     },
     {
@@ -140,7 +138,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2607.14202",
         },
         image: keyframe_compass_img,
-        imageFit: "contain",
         tags: ["Cultural & Philosophical", "Understanding People"],
     },
     {
@@ -179,7 +176,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2605.18984",
         },
         image: artifact_bench_img,
-        imageFit: "contain",
         tags: ["Honorable Mention", "Human-AI Collaboration", "Cultural & Philosophical", "Understanding People"],
     },
     {
@@ -204,7 +200,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2605.13062",
         },
         image: edit_compass_img,
-        imageFit: "contain",
         tags: ["Human-AI Collaboration", "Creativity Support", "Cognitive Augmentation"],
     },
     {
@@ -332,7 +327,6 @@ export const publications = [
             arxiv: "https://arxiv.org/abs/2601.10061",
         },
         image: cof_t2i_img,
-        imageFit: "contain",
         tags: ["Selected", "Agent Harness", "Human-AI Collaboration", "Cognitive Augmentation", "System", "Multimodal Interaction"],
     },
     {
