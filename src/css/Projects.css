@@ -40,13 +40,6 @@
     margin-top: 0;
 }
 
-.project-summary {
-    margin: 0.4rem 0 0;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    color: var(--theme-muted);
-}
-
 @media (min-width: 1001px) and (max-width: 1200px) {
     .project-card {
         flex-direction: column;

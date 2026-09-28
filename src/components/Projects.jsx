@@ -17,13 +17,15 @@ export default function Projects() {
                             <img src={project.image} alt={project.title} className="publication-image" />
                         </Link>
                         <div className="publication-content">
-                            <Link to={projectPath(project.id)} className="publication-title">
-                                {project.title}
-                            </Link>
+                            <div className="publication-title-wrapper">
+                                <Link to={projectPath(project.id)} className="publication-title">
+                                    {project.title}
+                                </Link>
+                                <div className="abstract-popup">{project.abstract}</div>
+                            </div>
                             <div className="publication-authors">
                                 <AuthorList authors={project.authors} />
                             </div>
-                            <p className="project-summary">{project.abstract}</p>
                             <div className="project-footer">
                                 <div className="publication-links">
                                     {getPaperLinks(project).map((link) => (
