@@ -19,7 +19,8 @@
 
 .header-container {
     margin: 0 auto;
-    padding: 0.8rem 8rem;
+    /* Match the body's 8rem right padding plus its 2rem inner margin. */
+    padding: 0.8rem 10rem 0.8rem 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
