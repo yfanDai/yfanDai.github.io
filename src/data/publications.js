@@ -1,7 +1,7 @@
 // Paper metadata checked against https://scholar.google.com/citations?user=zU8iSjoAAAAJ&hl=en on 2026-09-26.
 import research_on_wm_img from "../assets/paper_image/research_on_WM.png";
 import openworldlib_img from "../assets/paper_image/openworldlib.png";
-import gamefactory_img from "../assets/paper_image/gamefactory.png";
+import gamefactory_img from "../assets/paper_image/game.png";
 import capace_img from "../assets/paper_image/capace.png";
 import latentomni_img from "../assets/paper_image/latentomni.png";
 import latentomni_thumbnail from "../assets/paper_image/latentomni_stacked.png";
