@@ -50,7 +50,7 @@
 
 .publication-title:hover {
     font-weight: 800;
-    color: #F42E7A;
+    color: var(--theme-accent-hover);
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@
 
 .author-link:hover {
     color: #242424;
-    text-decoration: underline #ff9cb7;
+    text-decoration: underline var(--theme-accent);
 }
 
 .publication-venue {
@@ -111,11 +111,12 @@
     font-size: 12px;
     font-weight: 700;
     border-radius: 9999px;
-    color: #fff;
+    color: var(--theme-accent-hover);
 }
 
 .venue-tag.conference {
-    background-color: #FFBED2;
+    background-color: var(--theme-accent-soft);
+    color: var(--theme-accent-text);
 }
 
 .venue-tag.journal {
@@ -130,10 +131,12 @@
     background-color: #bdebef;
 }
 .venue-tag.wip {
-    background-color: #ccc;
+    background-color: var(--theme-badge-neutral);
+    color: var(--theme-muted);
 }
 .venue-tag.submission {
-    background-color: #acacac;
+    background-color: var(--theme-badge-neutral);
+    color: var(--theme-muted);
 }
 
 .venue-tag.exhibition {
@@ -163,18 +166,18 @@
     content: "|";
     margin: 0 8px;
     font-weight: bold;
-    color: #FFDEE8; /* 灰色竖线，可调整颜色 */
+    color: var(--theme-accent-border); /* 灰色竖线，可调整颜色 */
 }
 
 .publication-links a + .publications-msg::before {
     content: "|";
     margin: 0 8px;
     font-weight: bold;
-    color: #FFDEE8; /* 灰色竖线，可调整颜色 */
+    color: var(--theme-accent-border); /* 灰色竖线，可调整颜色 */
 }
 
 .publications-msg{
-    color: #acacac;
+    color: var(--theme-muted);
     font-size: 0.8rem;
 }
 
@@ -212,11 +215,11 @@
     margin-right: 4px;
     white-space: nowrap;
     display: inline-block;
-    background-color: #FFF6F8;
+    background-color: var(--theme-accent-wash);
     border-radius: 99px;
     padding: 0px 8px;
     font-size: 0.7rem;
-    color: #888;
+    color: var(--theme-muted);
 }
 
 
@@ -236,7 +239,7 @@
     top: 110%;
     left: 0;
     width: calc(100% - 24px);
-    background: #FFF6F8;
+    background: var(--theme-accent-wash);
     padding: 12px;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.1);
@@ -250,79 +253,10 @@
 }
 
 
-.rainbow-tag-all {
-    background: linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d,#7dcd6f,#6fcda6,#87dcdc,#7fcaff,#7f9dff,#9b7fff,#c57fff,#ff7fb9);
-    background-size: 400% 400%;
-    color: white;
-    border-radius: 99px;
-    padding: 0px 8px;
-    white-space: nowrap;
-    display: inline-block;
-    font-weight: bold;
-    animation: rainbowFlow 4s ease infinite;
-    margin-right: 4px;
-}
-.rainbow-tag {
-    margin-right: 8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
-    display: inline-block;
-    background: linear-gradient(
-            270deg,
-            #ff7f96,
-            #ffb07f,
-            #ffcd49,
-            #f3dc12,
-            #b8cc7d,
-            #7dcd6f,
-            #6fcda6,
-            #87dcdc,
-            #7fcaff,
-            #7f9dff,
-            #9b7fff,
-            #c57fff,
-            #ff7fb9
-    );
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbowFlow 6s linear infinite;
-
-}
-
-.rainbow-tag.active {
-    background: linear-gradient(
-            270deg,
-            #ff7f96,
-            #ffb07f,
-            #ffcd49,
-            #f3dc12,
-            #b8cc7d,
-            #7dcd6f,
-            #6fcda6,
-            #87dcdc,
-            #7fcaff,
-            #7f9dff,
-            #9b7fff,
-            #c57fff,
-            #ff7fb9
-    );
-    background-size: 400% 400%;
-    color: white;
-    -webkit-text-fill-color: white;
-    -webkit-background-clip: border-box;
-    border-radius: 99px;
-    padding: 0px 8px;
-    font-weight: bold;
-    animation: rainbowFlow 4s ease infinite;
-}
-
-@keyframes rainbowFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.selected-tag-all {
+    background: var(--theme-accent);
+    color: #fff;
+    font-weight: 700;
 }
 
 .submission-tag{
@@ -330,7 +264,7 @@
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    color: #acacac;
+    color: var(--theme-muted);
 }
 .submission-tag.active{
     margin-right: 8px;
@@ -344,61 +278,21 @@
 }
 .award-tag-all{
     background: #FFF4D6;
-    color: #C98A00;
+    color: #805C12;
     font-weight: bold;
 }
 .submission-tag-all{
     white-space: nowrap;
     display: inline-block;
     font-weight: bold;
-    background: #cccccc;
-    color: white;
+    background: var(--theme-badge-neutral);
+    color: var(--theme-muted);
     border-radius: 99px;
     padding: 0px 8px;
 }
 
-/*.rainbow-tag{*/
-/*    margin-right: 8px;*/
-/*    font-size: 0.7rem;*/
-/*    font-weight: 400;*/
-/*    cursor: pointer;*/
-/*    !*color: linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d,#7dcd6f,#6fcda6,#87dcdc,#7fcaff,#7f9dff,#9b7fff,#c57fff,#ff7fb9);*!*/
-/*}*/
-/*.rainbow-tag.active {*/
-/*    background: linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d,#7dcd6f,#6fcda6,#87dcdc,#7fcaff,#7f9dff,#9b7fff,#c57fff,#ff7fb9);*/
-/*    background-size: 400% 400%;*/
-/*    color: white !important;*/
-/*    border-radius: 4px;*/
-/*    padding: 2px 8px;*/
-/*    font-weight: bold;*/
-/*    animation: rainbowFlow 4s ease infinite;*/
-/*}*/
-
-/*.rainbow-tag {*/
-/*    margin-right: 8px;*/
-/*    font-size: 0.7rem;*/
-/*    cursor: pointer;*/
-/*    background: linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d,#7dcd6f,#6fcda6,#87dcdc,#7fcaff,#7f9dff,#9b7fff,#c57fff,#ff7fb9);*/
-/*    background-size: 400% 400%;*/
-/*    color: white !important;*/
-/*    border-radius: 4px;*/
-/*    padding: 2px 8px;*/
-/*    font-weight: bold;*/
-/*    animation: rainbowFlow 4s ease infinite;*/
-/*}*/
-
-/*.rainbow-tag.active {*/
-/*    border-bottom: 2px solid #F42E7A;*/
-/*}*/
-
-@keyframes rainbowFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 .publications-info-small{
-    color: #acacac;
+    color: var(--theme-muted);
     font-size: 0.7rem;
     font-style: italic;
     margin-bottom: 0.4rem;
@@ -411,9 +305,9 @@
     border-radius: 99px; /* 圆角 */
     /*border: 1px solid #eee;*/
     border: none;
-    background-color: #FFF6F8;
+    background-color: var(--theme-accent-wash);
     /*font-weight: bold;*/
-    color: #888;
+    color: var(--theme-muted);
     cursor: pointer;
     max-width: 240px;
     height: 1.3rem;
@@ -434,6 +328,6 @@
 
 .tag-select-filter:focus {
     outline: none;
-    /*border-color: #F42E7A; !* 举例：选中时的焦点颜色 *!*/
-    /*box-shadow: 0 0 5px rgba(244, 46, 122, 0.3);*/
+    /*border-color: var(--theme-accent); !* 举例：选中时的焦点颜色 *!*/
+    /*box-shadow: 0 0 5px var(--theme-accent-border);*/
 }

@@ -26,16 +26,16 @@
 .meta-description{
     margin: 1rem;
     font-size: 0.9rem;
-    /*color: #F42E7A;*/
-    color: #acacac;
+    /*color: var(--theme-accent);*/
+    color: var(--theme-muted);
 }
 .meta-linkitem{
     margin-bottom: 0.5rem;
     cursor: pointer;
-    background-color: #fff6f8;
+    background-color: var(--theme-accent-wash);
     border-radius: 8px;
     padding: 4px 12px;
-    color: #F42E7A;
+    color: var(--theme-accent);
     font-family: 'Sigmar One', serif;
     display: flex;
     align-items: center;
@@ -59,10 +59,10 @@
 }
 .icon-link{
     font-size: 1.4rem;
-    color: #F42E7A;
+    color: var(--theme-accent);
 }
 .small-text{
-    color: #acacac;
+    color: var(--theme-muted);
     font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     font-weight: normal;

@@ -2,10 +2,10 @@
     --ink: #1c1c1c;
     --body: #2f2f2f;
     --muted: #6f6f6f;
-    --faint: #9a9a9a;
+    --faint: var(--theme-muted);
     --line: #e8e8e8;
     --wash: #fafafa;
-    --accent: #F42E7A;
+    --accent: var(--theme-accent);
     --serif: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", serif;
 
     margin-top: 56px;

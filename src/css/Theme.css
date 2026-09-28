@@ -1,0 +1,13 @@
+/* 全站配色：强调文字使用中深蓝，浅蓝仅用于背景和边框。 */
+:root {
+    color-scheme: light;
+    --theme-accent: #326FA8;
+    --theme-accent-hover: #244F78;
+    --theme-accent-text: #2D6596;
+    --theme-accent-soft: #E3EDF7;
+    --theme-accent-border: #C9DBED;
+    --theme-accent-wash: #F3F7FB;
+    --theme-header-bg: rgba(243, 247, 251, 0.8);
+    --theme-muted: #536577;
+    --theme-badge-neutral: #EDF0F3;
+}

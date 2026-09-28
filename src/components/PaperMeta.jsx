@@ -17,7 +17,7 @@ export function AuthorList({ authors }) {
     return authors.map((author, i) => {
         const name = author.name + (AUTHOR_SYMBOLS[author.role] || "");
         const label = author.name === MY_NAME ? (
-            <strong style={{ color: "#F42E7A", fontWeight: 900 }}>{name}</strong>
+            <strong style={{ color: "var(--theme-accent)", fontWeight: 900 }}>{name}</strong>
         ) : (
             name
         );
@@ -39,7 +39,7 @@ export function AuthorList({ authors }) {
 
 export function PaperTag({ tag }) {
     if (tag === "Selected") {
-        return <span className="tag-item-show rainbow-tag-all">#{tag}</span>;
+        return <span className="tag-item-show selected-tag-all">#{tag}</span>;
     }
     if (tag === "Honorable Mention") {
         return <span className="tag-item-show award-tag-all">🏆 {tag}</span>;
@@ -47,5 +47,5 @@ export function PaperTag({ tag }) {
     if (tag === "In Submission") {
         return <span className="tag-item-show submission-tag-all">#{tag}</span>;
     }
-    return <span className="tag-item-show" style={{ color: "#888" }}>#{tag}</span>;
+    return <span className="tag-item-show">#{tag}</span>;
 }
