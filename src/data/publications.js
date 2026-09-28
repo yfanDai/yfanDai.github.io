@@ -1,5 +1,5 @@
 // Paper metadata checked against https://scholar.google.com/citations?user=zU8iSjoAAAAJ&hl=en on 2026-09-26.
-import cradle_img from "../assets/paper_image/cradle1.png";
+import research_on_wm_img from "../assets/paper_image/research_on_WM.png";
 import openworldlib_img from "../assets/paper_image/openworldlib.png";
 import gamefactory_img from "../assets/paper_image/gamefactory.png";
 import capace_img from "../assets/paper_image/capace.png";
@@ -241,7 +241,7 @@ export const publications = [
             pdf: "https://arxiv.org/pdf/2602.01630",
             arxiv: "https://arxiv.org/abs/2602.01630",
         },
-        image: cradle_img,
+        image: research_on_wm_img,
         tags: ["Human-AI Collaboration", "Affective Computing", "Cultural & Philosophical", "Understanding People"],
     },
     {
