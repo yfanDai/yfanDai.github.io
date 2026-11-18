@@ -11,6 +11,7 @@ import edit_compass_img from "../assets/paper_image/edit_compass.png";
 import flux_opd_img from "../assets/paper_image/flux_opd.png";
 import human_cap_img from "../assets/paper_image/human_cap.png";
 import keyframe_compass_img from "../assets/paper_image/keyframe_compass.png";
+import kling_understanding_img from "../assets/paper_image/kling_understanding.png";
 
 export const MY_NAME = "Yifan Dai";
 
@@ -297,6 +298,74 @@ export const publications = [
 ];
 
 export const projects = [
+    {
+        id: "kling-understanding",
+        title: "Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling",
+        role: "Core Contributor",
+        abstract: "This report examines how multimodal understanding supports controllable video generation across Kling's data, conditioning, alignment, and evaluation pipeline. Built on Kling-MLLM, it covers dense and reference-grounded captioning, prompt enhancement, perception-grounded text encoding, reward modeling, and task-specific automatic evaluation.",
+        authors: [
+            { name: "Kling Team" },
+            { name: "Dong Chen" },
+            { name: "Jialu Chen" },
+            { name: "Xinlong Chen" },
+            { name: "Yifan Dai", link: "https://yfandai.github.io/" },
+            { name: "Haotian Dong" },
+            { name: "Binzong Geng" },
+            { name: "Yushuo Guan" },
+            { name: "Minghui Guo" },
+            { name: "Guanlin He" },
+            { name: "Guanxiao He" },
+            { name: "Jingyun Hua" },
+            { name: "Yanwei Huang" },
+            { name: "Yiyan Ji" },
+            { name: "Xueping Jia" },
+            { name: "Yizhuo Jia" },
+            { name: "Bozhou Li" },
+            { name: "Jiaze Li" },
+            { name: "Min Li" },
+            { name: "Shihao Li" },
+            { name: "Shujie Li" },
+            { name: "Shengyi Liao" },
+            { name: "Weihong Lin" },
+            { name: "Shiyuan Liu" },
+            { name: "Xinyu Liu" },
+            { name: "Siyang Mao" },
+            { name: "Xiaoru Qu" },
+            { name: "Dianmo Sheng" },
+            { name: "Yang Shi" },
+            { name: "Jiafu Tang" },
+            { name: "Longxiang Tang" },
+            { name: "Yuqi Tang" },
+            { name: "Chengzhuo Tong" },
+            { name: "Kuo Wang" },
+            { name: "Qixun Wang" },
+            { name: "Rui Wang" },
+            { name: "Tianduo Wang" },
+            { name: "Yuran Wang" },
+            { name: "Zekun Wang" },
+            { name: "Zihao Wang" },
+            { name: "Boyang Xia" },
+            { name: "Yifan Xu" },
+            { name: "Liu Yang" },
+            { name: "Zhenlong Yuan" },
+            { name: "Bohan Zeng" },
+            { name: "Mujin Zhang" },
+            { name: "Yuanxing Zhang" },
+            { name: "Zhicheng Zhang" },
+            { name: "Zhuoran Zhang" },
+            { name: "Yuanhong Zheng" },
+            { name: "Kun Gai" },
+            { name: "Chengru Song" },
+            { name: "Pengfei Wan" },
+        ],
+        venues: [{ name: "Technical Report 2026", type: "wip" }],
+        links: {
+            pdf: "https://arxiv.org/pdf/2611.04916",
+            arxiv: "https://arxiv.org/abs/2611.04916",
+        },
+        image: kling_understanding_img,
+        tags: ["Multimodal Understanding", "Multimodal Generation"],
+    },
     {
         id: "openworldlib",
         title: "OpenWorldLib: A unified codebase and definition of advanced world models",
